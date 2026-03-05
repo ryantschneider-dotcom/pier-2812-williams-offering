@@ -14,37 +14,40 @@
     :root {
       --orange: #CB521E;
       --orange-light: #d9622b;
-      --dark: #0f0f0f;
-      --dark2: #1a1a1a;
-      --dark3: #242424;
-      --mid: #2e2e2e;
-      --border: #333;
-      --text: #e8e8e8;
-      --muted: #999;
+      --orange-pale: #fdf0ea;
+      --dark: #1a1a1a;
+      --bg: #ffffff;
+      --bg2: #f8f6f3;
+      --bg3: #f2ede8;
+      --mid: #e8e2db;
+      --border: #ddd;
+      --text: #1a1a1a;
+      --muted: #777;
       --light: #f5f3f0;
       --serif: 'Playfair Display', Georgia, serif;
       --sans: 'Inter', system-ui, sans-serif;
     }
 
     html { scroll-behavior: smooth; }
-    body { background: var(--dark); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.6; overflow-x: hidden; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.6; overflow-x: hidden; }
 
     /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 40px; height: 56px;
-      background: rgba(15,15,15,0.92); backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.08);
     }
-    .nav-brand { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; white-space: nowrap; }
+    .nav-brand { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: #555; text-transform: uppercase; white-space: nowrap; }
     .nav-links { display: flex; gap: 2px; }
     .nav-links button {
-      background: none; border: none; color: var(--muted); font-family: var(--sans);
+      background: none; border: none; color: #666; font-family: var(--sans);
       font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
       padding: 6px 14px; cursor: pointer; transition: color 0.2s;
     }
-    .nav-links button:hover, .nav-links button.active { color: #fff; }
+    .nav-links button:hover, .nav-links button.active { color: var(--orange); }
     .nav-cta {
       background: var(--orange); color: #fff; border: none;
       font-family: var(--sans); font-size: 11px; font-weight: 600;
@@ -110,7 +113,7 @@
     }
     .hero-lease-label {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+      letter-spacing: 0.16em; text-transform: uppercase; color: #888;
       margin-bottom: 6px;
     }
     .hero-lease-value {
@@ -143,7 +146,7 @@
     section { scroll-margin-top: 56px; }
 
     /* ── OVERVIEW ── */
-    #overview { background: var(--dark2); padding: 100px 40px; }
+    #overview { background: var(--bg); padding: 100px 40px; }
     .overview-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
     .section-eyebrow {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
@@ -152,23 +155,23 @@
     }
     .section-title {
       font-family: var(--serif); font-size: clamp(32px, 4vw, 52px);
-      font-weight: 400; line-height: 1.1; color: #fff; margin-bottom: 28px;
+      font-weight: 400; line-height: 1.1; color: var(--dark); margin-bottom: 28px;
     }
-    .section-body { font-size: 15px; line-height: 1.8; color: #bbb; }
+    .section-body { font-size: 15px; line-height: 1.8; color: #444; }
     .section-body p { margin-bottom: 18px; }
     .spec-table { width: 100%; border-collapse: collapse; }
-    .spec-table tr { border-bottom: 1px solid var(--border); }
+    .spec-table tr { border-bottom: 1px solid #e8e4df; }
     .spec-table tr:last-child { border-bottom: none; }
     .spec-table td { padding: 14px 0; font-size: 13px; vertical-align: top; }
     .spec-table td:first-child {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+      letter-spacing: 0.12em; text-transform: uppercase; color: #888;
       width: 45%; padding-right: 16px;
     }
-    .spec-table td:last-child { color: #e0e0e0; font-weight: 400; }
+    .spec-table td:last-child { color: #222; font-weight: 500; }
 
     /* ── PHOTO GALLERY ── */
-    #gallery { background: var(--dark); padding: 100px 40px; }
+    #gallery { background: var(--bg2); padding: 100px 40px; }
     .gallery-inner { max-width: 1200px; margin: 0 auto; }
     .gallery-header { margin-bottom: 48px; }
     .gallery-grid {
@@ -199,13 +202,13 @@
     .gallery-item:hover .gallery-caption { opacity: 1; }
 
     /* ── LOCATION ── */
-    #location { background: var(--dark3); padding: 100px 40px; }
+    #location { background: var(--bg3); padding: 100px 40px; }
     .location-inner { max-width: 1200px; margin: 0 auto; }
     .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 60px; }
     .location-image { width: 100%; border-radius: 2px; display: block; }
     .location-scores { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-bottom: 40px; }
     .score-item {
-      background: var(--mid); padding: 24px 20px;
+      background: #fff; border: 1px solid var(--border); padding: 24px 20px;
       text-align: center;
     }
     .score-value {
@@ -214,29 +217,29 @@
     }
     .score-label {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+      letter-spacing: 0.12em; text-transform: uppercase; color: #666;
       margin-bottom: 2px;
     }
     .score-sub { font-size: 11px; color: #888; }
     .neighbors-list { list-style: none; }
     .neighbors-list li {
       display: flex; justify-content: space-between; align-items: baseline;
-      padding: 12px 0; border-bottom: 1px solid var(--border);
+      padding: 12px 0; border-bottom: 1px solid #e8e4df;
       font-size: 13px;
     }
     .neighbors-list li:last-child { border-bottom: none; }
-    .neighbor-name { color: #e0e0e0; font-weight: 500; }
+    .neighbor-name { color: #222; font-weight: 500; }
     .neighbor-dist {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
       letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange);
     }
 
     /* ── MARKET ── */
-    #market { background: var(--dark2); padding: 100px 40px; }
+    #market { background: var(--bg); padding: 100px 40px; }
     .market-inner { max-width: 1200px; margin: 0 auto; }
     .market-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin: 48px 0; }
     .market-stat {
-      background: var(--mid); padding: 32px 24px; text-align: center;
+      background: var(--orange); padding: 32px 24px; text-align: center;
     }
     .market-stat-value {
       font-family: var(--serif); font-size: 42px; font-weight: 400;
@@ -244,59 +247,63 @@
     }
     .market-stat-label {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
+      color: rgba(255,255,255,0.85);
       letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
       margin-bottom: 4px;
     }
-    .market-stat-sub { font-size: 11px; color: #777; }
+    .market-stat-sub { font-size: 11px; color: rgba(255,255,255,0.65); }
     .demo-table-wrap { margin-top: 60px; }
     .demo-table-title {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+      letter-spacing: 0.16em; text-transform: uppercase; color: #888;
       margin-bottom: 16px;
     }
     .demo-table { width: 100%; border-collapse: collapse; }
     .demo-table th {
       font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-      padding: 10px 16px; text-align: right; border-bottom: 1px solid var(--border);
+      letter-spacing: 0.12em; text-transform: uppercase; color: #888;
+      padding: 10px 16px; text-align: right; border-bottom: 2px solid var(--orange);
     }
     .demo-table th:first-child { text-align: left; }
     .demo-table td {
-      padding: 14px 16px; font-size: 13px; color: #ccc;
-      text-align: right; border-bottom: 1px solid rgba(255,255,255,0.04);
+      padding: 14px 16px; font-size: 13px; color: #444;
+      text-align: right; border-bottom: 1px solid #eee;
     }
-    .demo-table td:first-child { text-align: left; color: #e0e0e0; font-weight: 500; }
+    .demo-table td:first-child { text-align: left; color: #222; font-weight: 500; }
     .demo-table tr:last-child td { border-bottom: none; }
-    .demo-source { font-size: 11px; color: #666; margin-top: 12px; }
+    .demo-source { font-size: 11px; color: #999; margin-top: 12px; }
+    .demo-table tr:nth-child(even) { background: var(--bg2); }
 
     /* ── CONTACT ── */
-    #contact { background: var(--dark); padding: 100px 40px; }
+    #contact { background: var(--orange); padding: 100px 40px; }
     .contact-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-    .contact-left .section-title { font-size: clamp(28px, 3.5vw, 44px); }
-    .contact-body { font-size: 15px; line-height: 1.8; color: #999; margin-bottom: 32px; }
+    .contact-left .section-title { font-size: clamp(28px, 3.5vw, 44px); color: #fff; }
+    #contact .section-eyebrow { color: rgba(255,255,255,0.7); }
+    .contact-body { font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 32px; }
     .contact-card {
-      background: var(--dark3); border: 1px solid var(--border);
+      background: #fff; border: none;
       padding: 40px; display: flex; flex-direction: column; gap: 24px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
     }
     .contact-logo { height: 56px; width: auto; margin-bottom: 16px; }
     .contact-name {
-      font-family: var(--serif); font-size: 26px; font-weight: 400; color: #fff;
+      font-family: var(--serif); font-size: 26px; font-weight: 400; color: var(--dark);
     }
     .contact-title {
       font-family: var(--sans); font-size: 11px; font-weight: 600;
       letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange);
       margin-top: 4px;
     }
-    .contact-divider { height: 1px; background: var(--border); }
+    .contact-divider { height: 1px; background: #eee; }
     .contact-details { display: flex; flex-direction: column; gap: 12px; }
     .contact-row {
       display: flex; align-items: center; gap: 12px;
-      font-size: 14px; color: #ccc;
+      font-size: 14px; color: #444;
     }
-    .contact-row a { color: #ccc; text-decoration: none; transition: color 0.2s; }
+    .contact-row a { color: #444; text-decoration: none; transition: color 0.2s; }
     .contact-row a:hover { color: var(--orange); }
     .contact-icon {
-      width: 32px; height: 32px; background: var(--mid);
+      width: 32px; height: 32px; background: var(--orange-pale);
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0; font-size: 14px;
     }
@@ -312,12 +319,12 @@
 
     /* ── FOOTER ── */
     footer {
-      background: #080808; border-top: 1px solid var(--border);
+      background: var(--dark); border-top: none;
       padding: 40px; text-align: center;
     }
     .footer-logo { height: 48px; width: auto; margin: 0 auto 24px; display: block; opacity: 0.85; }
-    .footer-text { font-size: 11px; color: #555; line-height: 1.7; max-width: 700px; margin: 0 auto 16px; }
-    .footer-meta { font-size: 11px; color: #444; }
+    .footer-text { font-size: 11px; color: #888; line-height: 1.7; max-width: 700px; margin: 0 auto 16px; }
+    .footer-meta { font-size: 11px; color: #666; }
 
     /* ── LIGHTBOX ── */
     .lightbox {
@@ -365,11 +372,11 @@
 <nav id="main-nav">
   <span class="nav-brand">2812 Williams Street · Savannah, GA</span>
   <div class="nav-links">
-    <button onclick="scrollTo('overview')" class="active">Overview</button>
-    <button onclick="scrollTo('gallery')">Gallery</button>
-    <button onclick="scrollTo('location')">Location</button>
-    <button onclick="scrollTo('market')">Market</button>
-    <button onclick="scrollTo('contact')">Contact</button>
+    <button onclick="scrollToSection('overview')" class="active">Overview</button>
+    <button onclick="scrollToSection('gallery')">Gallery</button>
+    <button onclick="scrollToSection('location')">Location</button>
+    <button onclick="scrollToSection('market')">Market</button>
+    <button onclick="scrollToSection('contact')">Contact</button>
   </div>
   <img src="web_images/pier-logo-nav.png" alt="PIER Commercial Real Estate" class="nav-logo" style="height:40px;width:auto;" />
 </nav>
@@ -586,7 +593,7 @@
   <div class="market-inner">
     <div class="section-eyebrow">Market Overview</div>
     <h2 class="section-title">The Customer Base<br>Is Already Here</h2>
-    <p style="color:#999; font-size:15px; max-width:680px; line-height:1.8;">Over 83,000 people live within 3 miles of this property, with average household incomes approaching $80,000. This is a proven, active consumer market — not a speculative one. The Victory Drive corridor is Savannah's most active commercial and residential growth zone.</p>
+    <p style="color:#555; font-size:15px; max-width:680px; line-height:1.8;">Over 83,000 people live within 3 miles of this property, with average household incomes approaching $80,000. This is a proven, active consumer market — not a speculative one. The Victory Drive corridor is Savannah's most active commercial and residential growth zone.</p>
 
     <div class="market-stats">
       <div class="market-stat">
@@ -705,12 +712,18 @@
       if (el && window.scrollY >= el.offsetTop - 80) current = id;
     });
     navBtns.forEach(btn => {
-      btn.classList.toggle('active', btn.getAttribute('onclick').includes(current));
+      const onclickVal = btn.getAttribute('onclick') || '';
+      btn.classList.toggle('active', onclickVal.includes("'" + current + "'"));
     });
   });
 
-  function scrollTo(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      const offset = 60;
+      const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
   }
 
   // Lightbox
