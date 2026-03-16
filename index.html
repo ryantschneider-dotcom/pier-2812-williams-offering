@@ -3,703 +3,771 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2812 Williams Street — Office / Retail-Showroom For Lease | Savannah, GA</title>
-  <meta name="description" content="6,542 SF office and retail-showroom building for lease on the Victory Drive Corridor, Savannah, GA. Adjacent to Whole Foods, ALDI, Target, Home Depot, and Aventon Victory luxury apartments." />
+  <title>2812 Williams Street | Investment Offering | For Sale | Savannah, GA</title>
+  <meta name="description" content="Investment offering: 2812 Williams Street, Savannah, GA. 6,542 SF income-producing commercial property. Modified NNN lease at $23/SF. $2,300,000 asking price. 6.2% cap rate. Victory Drive Corridor. PIER Commercial Real Estate." />
+  <meta property="og:title" content="2812 Williams Street — Investment Offering | Savannah, GA" />
+  <meta property="og:description" content="6,542 SF commercial building. Modified NNN lease at $23/SF. $2,300,000 asking price. 6.2% cap rate. Victory Drive Corridor." />
+  <meta property="og:image" content="web_images/hero_aerial_spotlight.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --orange: #CB521E;
-      --orange-light: #d9622b;
-      --orange-pale: #fdf0ea;
-      --dark: #1a1a1a;
-      --bg: #ffffff;
-      --bg2: #f8f6f3;
-      --bg3: #f2ede8;
-      --mid: #e8e2db;
-      --border: #ddd;
-      --text: #1a1a1a;
-      --muted: #777;
-      --light: #f5f3f0;
-      --serif: 'Playfair Display', Georgia, serif;
-      --sans: 'Inter', system-ui, sans-serif;
+      --navy:        #0b1929;
+      --navy-mid:    #162840;
+      --navy-light:  #1e3a56;
+      --orange:      #CB521E;
+      --orange-dark: #a84218;
+      --orange-light:#e8693a;
+      --white:       #ffffff;
+      --off-white:   #f8f6f3;
+      --light-gray:  #f0ede8;
+      --mid-gray:    #e0dbd4;
+      --text-dark:   #1a1a1a;
+      --text-mid:    #4a4a4a;
+      --text-light:  #7a7a7a;
+      --green:       #2e7d32;
+      --green-light: #e8f5e9;
     }
-
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.6; overflow-x: hidden; }
+    body { font-family: 'Inter', sans-serif; color: var(--text-dark); background: var(--white); overflow-x: hidden; }
 
     /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(11,25,41,0.97); backdrop-filter: blur(8px);
+      border-bottom: 2px solid var(--orange);
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 40px; height: 56px;
-      background: rgba(255,255,255,0.97); backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+      padding: 0 2rem; height: 64px;
     }
-    .nav-brand { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: #555; text-transform: uppercase; white-space: nowrap; }
-    .nav-links { display: flex; gap: 2px; }
-    .nav-links button {
-      background: none; border: none; color: #666; font-family: var(--sans);
-      font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 6px 14px; cursor: pointer; transition: color 0.2s;
+    .nav-left { display: flex; align-items: center; gap: 1.25rem; }
+    .nav-logo img { height: 38px; width: auto; display: block; }
+    .nav-badge {
+      background: var(--orange); color: var(--white);
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 4px 10px; border-radius: 3px;
+      white-space: nowrap;
     }
-    .nav-links button:hover, .nav-links button.active { color: var(--orange); }
+    .nav-links { display: flex; gap: 0; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.65); text-decoration: none;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 6px 11px; border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); background: rgba(203,82,30,0.2); }
+    .nav-links a.active { color: var(--white); background: var(--orange); }
     .nav-cta {
-      background: var(--orange); color: #fff; border: none;
-      font-family: var(--sans); font-size: 11px; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 8px 18px; cursor: pointer; transition: background 0.2s;
+      background: var(--orange); color: var(--white); border: none;
+      padding: 9px 18px; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; border-radius: 4px;
+      cursor: pointer; text-decoration: none; transition: background 0.2s;
+      white-space: nowrap;
     }
-    .nav-cta:hover { background: var(--orange-light); }
-    .nav-logo { height: 40px; width: auto; }
+    .nav-cta:hover { background: var(--orange-dark); }
 
     /* ── HERO ── */
     #hero {
       position: relative;
-      /* Height = 56.25% of viewport width (16:9 aspect ratio of the spotlight image)
-         with a minimum of 620px and maximum of 100vh */
-      height: min(56.25vw, 100vh);
-      min-height: 620px;
+      height: min(56.25vw, 100vh); min-height: 620px;
       display: flex; flex-direction: column; justify-content: flex-end;
       overflow: hidden; background: #000;
     }
     .hero-bg {
       position: absolute; inset: 0;
-      /* The spotlight image is 1920x1080 (16:9). Using cover ensures it fills
-         the hero at any viewport size without black bars or repetition. */
       background-image: url('web_images/hero_aerial_spotlight.jpg');
-      background-size: cover;
-      background-position: center 30%;
+      background-size: cover; background-position: center 30%;
       background-repeat: no-repeat;
     }
-    /* Minimal overlay: gradient at bottom for text legibility only */
     .hero-overlay {
       position: absolute; inset: 0; z-index: 1;
       background: linear-gradient(
         to bottom,
-        rgba(0,0,0,0.00) 0%,
-        rgba(0,0,0,0.00) 40%,
-        rgba(0,0,0,0.20) 65%,
-        rgba(0,0,0,0.50) 100%
+        rgba(11,25,41,0.04) 0%,
+        rgba(11,25,41,0.04) 35%,
+        rgba(11,25,41,0.28) 60%,
+        rgba(11,25,41,0.80) 100%
       );
     }
-    .hero-badge {
+    .hero-badge-top {
       position: absolute; top: 80px; left: 40px; z-index: 3;
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.6);
-      border: 1px solid rgba(255,255,255,0.25); padding: 6px 14px;
+      font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--white); background: var(--orange); padding: 6px 16px; border-radius: 3px;
     }
-    .hero-address {
+    .hero-address-top {
       position: absolute; top: 80px; right: 40px; z-index: 3;
-      font-family: var(--sans); font-size: 11px; font-weight: 500;
-      letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5);
+      font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
     }
     .hero-content {
       position: relative; z-index: 3;
-      padding: 0 40px 32px;
-      max-width: 900px;
+      padding: 0 40px 36px; max-width: 900px;
     }
     .hero-eyebrow {
-      font-family: var(--sans); font-size: 11px; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--orange); margin-bottom: 20px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--orange); margin-bottom: 14px;
     }
     .hero-title {
-      font-family: var(--serif); font-size: clamp(38px, 5.5vw, 72px);
-      font-weight: 400; line-height: 1.05; color: #fff;
-      margin-bottom: 14px;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 5vw, 68px); font-weight: 700; line-height: 1.05;
+      color: var(--white); margin-bottom: 10px;
     }
     .hero-subtitle {
-      font-family: var(--sans); font-size: 14px; font-weight: 400;
-      color: rgba(255,255,255,0.65); letter-spacing: 0.04em;
-      margin-bottom: 32px;
+      font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.65);
+      letter-spacing: 0.04em; margin-bottom: 24px;
     }
     .hero-tags {
-      display: flex; gap: 24px; flex-wrap: wrap;
-      font-family: var(--sans); font-size: 12px; font-weight: 500;
-      color: rgba(255,255,255,0.5); letter-spacing: 0.06em;
+      display: flex; gap: 20px; flex-wrap: wrap;
+      font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.5); letter-spacing: 0.06em;
     }
     .hero-tags span { display: flex; align-items: center; gap: 8px; }
     .hero-tags span::before { content: ''; display: block; width: 4px; height: 4px; background: var(--orange); border-radius: 50%; }
-    .hero-lease {
-      margin-top: 20px; padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,0.12);
+    .hero-price-row {
+      margin-top: 24px; padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      display: flex; align-items: flex-end; gap: 28px; flex-wrap: wrap;
     }
-    .hero-lease-label {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.16em; text-transform: uppercase; color: #888;
-      margin-bottom: 6px;
-    }
-    .hero-lease-value {
-      font-family: var(--serif); font-size: 36px; font-weight: 400; color: #fff;
-    }
-    .hero-lease-sub {
-      font-family: var(--sans); font-size: 12px; color: var(--muted); margin-top: 4px;
+    .hero-price-label { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 4px; }
+    .hero-price-value { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 700; color: var(--white); line-height: 1; }
+    .hero-price-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 4px; }
+    .hero-cap-pill {
+      background: rgba(46,125,50,0.85); border: 1px solid rgba(46,125,50,0.5);
+      color: #a5d6a7; font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 8px 18px; border-radius: 30px;
     }
 
-    /* ── STATS BAR ── */
-    .stats-bar {
-      background: var(--orange);
-      display: grid; grid-template-columns: repeat(4, 1fr);
+    /* ── METRICS BAR ── */
+    .metrics-bar { background: var(--navy); }
+    .metrics-bar-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(5, 1fr);
     }
-    .stat-item {
-      padding: 28px 32px; border-right: 1px solid rgba(255,255,255,0.15);
-      text-align: center;
+    .metric-item {
+      padding: 1.4rem 1rem; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
     }
-    .stat-item:last-child { border-right: none; }
-    .stat-value {
-      font-family: var(--serif); font-size: 36px; font-weight: 400;
-      color: #fff; line-height: 1; margin-bottom: 6px;
-    }
-    .stat-label {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.75);
-    }
+    .metric-item:last-child { border-right: none; }
+    .metric-value { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: var(--white); line-height: 1; display: block; }
+    .metric-value.hl { color: var(--orange-light); }
+    .metric-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 5px; display: block; }
 
     /* ── SECTIONS ── */
-    section { scroll-margin-top: 56px; }
+    section { padding: 5rem 2rem; scroll-margin-top: 64px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
+    .section-label.lt { color: rgba(255,255,255,0.5); }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.7rem, 2.8vw, 2.4rem); font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 1.1rem; }
+    .section-title.lt { color: var(--white); }
+    .section-intro { font-size: 0.96rem; line-height: 1.85; color: var(--text-mid); max-width: 720px; margin-bottom: 2.5rem; }
 
     /* ── OVERVIEW ── */
-    #overview { background: var(--bg); padding: 100px 40px; }
-    .overview-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-    .section-eyebrow {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange);
-      margin-bottom: 20px;
-    }
-    .section-title {
-      font-family: var(--serif); font-size: clamp(32px, 4vw, 52px);
-      font-weight: 400; line-height: 1.1; color: var(--dark); margin-bottom: 28px;
-    }
-    .section-body { font-size: 15px; line-height: 1.8; color: #444; }
-    .section-body p { margin-bottom: 18px; }
-    .spec-table { width: 100%; border-collapse: collapse; }
-    .spec-table tr { border-bottom: 1px solid #e8e4df; }
-    .spec-table tr:last-child { border-bottom: none; }
-    .spec-table td { padding: 14px 0; font-size: 13px; vertical-align: top; }
-    .spec-table td:first-child {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: #888;
-      width: 45%; padding-right: 16px;
-    }
-    .spec-table td:last-child { color: #222; font-weight: 500; }
+    #overview { background: var(--white); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .overview-text p { font-size: 0.94rem; line-height: 1.85; color: var(--text-mid); margin-bottom: 1rem; }
+    .overview-text p strong { color: var(--text-dark); }
+    .spec-table { background: var(--off-white); border-radius: 8px; overflow: hidden; border: 1px solid var(--mid-gray); }
+    .spec-table-header { background: var(--navy); color: var(--white); padding: 0.85rem 1.4rem; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+    .spec-row { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1.4rem; border-bottom: 1px solid var(--mid-gray); gap: 1rem; }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-key { font-size: 0.72rem; font-weight: 600; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.06em; flex-shrink: 0; }
+    .spec-val { font-size: 0.86rem; font-weight: 600; color: var(--text-dark); text-align: right; }
+    .spec-val.hl { color: var(--orange); font-weight: 700; }
 
-    /* ── PHOTO GALLERY ── */
-    #gallery { background: var(--bg2); padding: 100px 40px; }
-    .gallery-inner { max-width: 1200px; margin: 0 auto; }
-    .gallery-header { margin-bottom: 48px; }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3px;
+    /* ── HIGHLIGHTS ── */
+    #highlights { background: var(--off-white); }
+    .highlights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
+    .highlight-card {
+      background: var(--white); border: 1px solid var(--mid-gray);
+      border-top: 3px solid var(--orange); border-radius: 6px;
+      padding: 1.85rem 1.65rem; transition: box-shadow 0.2s;
     }
-    .gallery-item {
-      position: relative; overflow: hidden; cursor: pointer;
-      aspect-ratio: 4/3;
+    .highlight-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .highlight-icon { font-size: 1.7rem; margin-bottom: 0.85rem; display: block; }
+    .highlight-title { font-family: 'Playfair Display', serif; font-size: 1.08rem; font-weight: 600; color: var(--navy); margin-bottom: 0.6rem; }
+    .highlight-text { font-size: 0.85rem; line-height: 1.75; color: var(--text-mid); }
+
+    /* ── PROFORMA ── */
+    #proforma { background: var(--navy); }
+    .proforma-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+    .proforma-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; overflow: hidden; }
+    .proforma-card-header { background: rgba(255,255,255,0.08); padding: 0.95rem 1.4rem; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.55); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .proforma-row { display: flex; justify-content: space-between; align-items: center; padding: 0.72rem 1.4rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .proforma-row:last-child { border-bottom: none; }
+    .proforma-row.total { background: rgba(203,82,30,0.15); border-top: 1px solid rgba(203,82,30,0.35); padding: 0.95rem 1.4rem; }
+    .proforma-row.noi-row { background: rgba(46,125,50,0.15); border-top: 1px solid rgba(46,125,50,0.35); padding: 0.95rem 1.4rem; }
+    .proforma-key { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
+    .proforma-val { font-size: 0.87rem; font-weight: 600; color: var(--white); }
+    .proforma-val.pos { color: #a5d6a7; }
+    .proforma-val.neg { color: #ef9a9a; }
+    .proforma-val.noi-v { color: #a5d6a7; font-size: 1.08rem; font-weight: 700; }
+    .proforma-val.tot-v { color: var(--orange-light); font-size: 1.08rem; font-weight: 700; }
+    .cap-callout {
+      margin-top: 2rem; padding: 1.85rem 2rem;
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+      border-left: 4px solid var(--orange); border-radius: 8px;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
     }
-    .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/9; }
-    .gallery-item.tall { grid-row: span 2; aspect-ratio: auto; }
-    .gallery-item img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 0.4s ease, filter 0.3s ease;
-      filter: brightness(0.9);
-    }
-    .gallery-item:hover img { transform: scale(1.04); filter: brightness(1); }
-    .gallery-caption {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(transparent, rgba(0,0,0,0.7));
-      padding: 20px 16px 12px;
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7);
-      opacity: 0; transition: opacity 0.3s;
-    }
+    .cap-stat { text-align: center; }
+    .cap-stat-value { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 700; color: var(--white); line-height: 1; display: block; }
+    .cap-stat-value.grn { color: #a5d6a7; }
+    .cap-stat-value.orn { color: var(--orange-light); }
+    .cap-stat-label { font-size: 0.63rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 6px; display: block; }
+    .proforma-disclaimer { margin-top: 1.4rem; font-size: 0.73rem; color: rgba(255,255,255,0.3); line-height: 1.7; font-style: italic; text-align: center; }
+
+    /* ── LEASE ── */
+    #lease { background: var(--white); }
+    .lease-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2.5rem; }
+    .lease-card { background: var(--navy); border-radius: 8px; padding: 2.25rem; border-left: 4px solid var(--orange); }
+    .lease-card-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 600; color: var(--white); margin-bottom: 1.4rem; }
+    .lease-item { display: flex; gap: 0.9rem; margin-bottom: 1.15rem; padding-bottom: 1.15rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .lease-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .lease-item-icon { font-size: 1.15rem; flex-shrink: 0; margin-top: 2px; }
+    .lease-item-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 3px; }
+    .lease-item-value { font-size: 0.9rem; font-weight: 600; color: var(--white); }
+    .lease-item-note { font-size: 0.76rem; color: rgba(255,255,255,0.45); margin-top: 2px; }
+    .expense-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.9rem; }
+    .expense-row { display: flex; justify-content: space-between; align-items: center; padding: 0.72rem 0; border-bottom: 1px solid var(--mid-gray); }
+    .expense-row:last-child { border-bottom: none; }
+    .expense-party { font-size: 0.82rem; color: var(--text-mid); }
+    .expense-badge { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; }
+    .badge-t { background: var(--green-light); color: var(--green); }
+    .badge-l { background: #fff3e0; color: #e65100; }
+    .investor-note { margin-top: 1.4rem; padding: 1.15rem 1.35rem; background: var(--green-light); border-radius: 6px; border-left: 3px solid var(--green); }
+    .investor-note p { font-size: 0.82rem; color: #1b5e20; line-height: 1.7; }
+
+    /* ── GALLERY ── */
+    #gallery { background: var(--off-white); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-top: 2.5rem; }
+    .gallery-item { position: relative; overflow: hidden; border-radius: 6px; cursor: pointer; aspect-ratio: 16/9; background: var(--mid-gray); }
+    .gallery-item.featured { grid-column: span 2; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-overlay { position: absolute; inset: 0; background: rgba(11,25,41,0); transition: background 0.3s; display: flex; align-items: flex-end; padding: 0.9rem; }
+    .gallery-item:hover .gallery-overlay { background: rgba(11,25,41,0.4); }
+    .gallery-caption { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); opacity: 0; transition: opacity 0.3s; }
     .gallery-item:hover .gallery-caption { opacity: 1; }
 
+    /* ── LIGHTBOX ── */
+    .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 9999; display: none; align-items: center; justify-content: center; }
+    .lightbox.active { display: flex; }
+    .lightbox-img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+    .lightbox-close { position: absolute; top: 1.5rem; right: 2rem; color: white; font-size: 2rem; cursor: pointer; background: none; border: none; }
+    .lightbox-prev, .lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); color: white; font-size: 2rem; cursor: pointer; background: rgba(255,255,255,0.1); border: none; padding: 0.7rem 1.1rem; border-radius: 4px; }
+    .lightbox-prev { left: 1.5rem; }
+    .lightbox-next { right: 1.5rem; }
+
     /* ── LOCATION ── */
-    #location { background: var(--bg3); padding: 100px 40px; }
-    .location-inner { max-width: 1200px; margin: 0 auto; }
-    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 60px; }
-    .location-image { width: 100%; border-radius: 2px; display: block; }
-    .location-scores { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-bottom: 40px; }
-    .score-item {
-      background: #fff; border: 1px solid var(--border); padding: 24px 20px;
-      text-align: center;
-    }
-    .score-value {
-      font-family: var(--serif); font-size: 40px; font-weight: 400;
-      color: var(--orange); line-height: 1; margin-bottom: 4px;
-    }
-    .score-label {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: #666;
-      margin-bottom: 2px;
-    }
-    .score-sub { font-size: 11px; color: #888; }
-    .neighbors-list { list-style: none; }
-    .neighbors-list li {
-      display: flex; justify-content: space-between; align-items: baseline;
-      padding: 12px 0; border-bottom: 1px solid #e8e4df;
-      font-size: 13px;
-    }
-    .neighbors-list li:last-child { border-bottom: none; }
-    .neighbor-name { color: #222; font-weight: 500; }
-    .neighbor-dist {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange);
-    }
+    #location { background: var(--white); }
+    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-top: 2.5rem; }
+    .retailer-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem; }
+    .retailer-card { background: var(--off-white); border: 1px solid var(--mid-gray); border-radius: 6px; padding: 0.9rem 1.1rem; display: flex; align-items: center; gap: 0.7rem; }
+    .retailer-dot { width: 7px; height: 7px; background: var(--orange); border-radius: 50%; flex-shrink: 0; }
+    .retailer-name { font-size: 0.84rem; font-weight: 600; color: var(--text-dark); }
+    .retailer-dist { font-size: 0.7rem; color: var(--text-light); margin-top: 1px; }
+    .traffic-callout { margin-top: 1.4rem; background: var(--navy); border-radius: 8px; padding: 1.6rem 1.85rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .traffic-stat { text-align: center; }
+    .traffic-value { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: var(--white); display: block; line-height: 1; }
+    .traffic-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 5px; display: block; }
+    .submarket-text p { font-size: 0.92rem; line-height: 1.85; color: var(--text-mid); margin-bottom: 1rem; }
 
     /* ── MARKET ── */
-    #market { background: var(--bg); padding: 100px 40px; }
-    .market-inner { max-width: 1200px; margin: 0 auto; }
-    .market-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin: 48px 0; }
-    .market-stat {
-      background: var(--orange); padding: 32px 24px; text-align: center;
-    }
-    .market-stat-value {
-      font-family: var(--serif); font-size: 42px; font-weight: 400;
-      color: #fff; line-height: 1; margin-bottom: 8px;
-    }
-    .market-stat-label {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      color: rgba(255,255,255,0.85);
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-      margin-bottom: 4px;
-    }
-    .market-stat-sub { font-size: 11px; color: rgba(255,255,255,0.65); }
-    .demo-table-wrap { margin-top: 60px; }
-    .demo-table-title {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.16em; text-transform: uppercase; color: #888;
-      margin-bottom: 16px;
-    }
-    .demo-table { width: 100%; border-collapse: collapse; }
-    .demo-table th {
-      font-family: var(--sans); font-size: 10px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: #888;
-      padding: 10px 16px; text-align: right; border-bottom: 2px solid var(--orange);
-    }
-    .demo-table th:first-child { text-align: left; }
-    .demo-table td {
-      padding: 14px 16px; font-size: 13px; color: #444;
-      text-align: right; border-bottom: 1px solid #eee;
-    }
-    .demo-table td:first-child { text-align: left; color: #222; font-weight: 500; }
-    .demo-table tr:last-child td { border-bottom: none; }
-    .demo-source { font-size: 11px; color: #999; margin-top: 12px; }
-    .demo-table tr:nth-child(even) { background: var(--bg2); }
+    #market { background: var(--off-white); }
+    .demo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
+    .demo-card { background: var(--white); border: 1px solid var(--mid-gray); border-radius: 8px; overflow: hidden; }
+    .demo-card-header { background: var(--navy); padding: 0.82rem 1.2rem; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
+    .demo-row { display: flex; justify-content: space-between; align-items: center; padding: 0.68rem 1.2rem; border-bottom: 1px solid var(--mid-gray); }
+    .demo-row:last-child { border-bottom: none; }
+    .demo-key { font-size: 0.78rem; color: var(--text-light); }
+    .demo-val { font-size: 0.87rem; font-weight: 600; color: var(--text-dark); }
+    .demo-source { font-size: 0.68rem; color: var(--text-light); font-style: italic; margin-top: 1.4rem; text-align: center; }
 
     /* ── CONTACT ── */
-    #contact { background: var(--orange); padding: 100px 40px; }
-    .contact-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-    .contact-left .section-title { font-size: clamp(28px, 3.5vw, 44px); color: #fff; }
-    #contact .section-eyebrow { color: rgba(255,255,255,0.7); }
-    .contact-body { font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 32px; }
-    .contact-card {
-      background: #fff; border: none;
-      padding: 40px; display: flex; flex-direction: column; gap: 24px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+    #contact { background: var(--navy); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-top: 2.5rem; }
+    .contact-text { font-size: 0.94rem; line-height: 1.8; color: rgba(255,255,255,0.6); margin-bottom: 1.85rem; }
+    .broker-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 1.85rem; }
+    .broker-name { font-family: 'Playfair Display', serif; font-size: 1.28rem; font-weight: 600; color: var(--white); margin-bottom: 0.2rem; }
+    .broker-title { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange-light); margin-bottom: 1.4rem; }
+    .broker-contact { display: flex; flex-direction: column; gap: 0.6rem; }
+    .broker-contact a { display: flex; align-items: center; gap: 0.7rem; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.87rem; transition: color 0.2s; }
+    .broker-contact a:hover { color: var(--white); }
+    .broker-contact-icon { width: 18px; text-align: center; color: var(--orange); }
+    .contact-form { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.85rem; }
+    .contact-form h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--white); margin-bottom: 1.4rem; }
+    .form-group { margin-bottom: 1.15rem; }
+    .form-group label { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 0.45rem; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 4px; padding: 10px 13px; color: var(--white);
+      font-family: 'Inter', sans-serif; font-size: 0.87rem; outline: none; transition: border-color 0.2s;
     }
-    .contact-logo { height: 56px; width: auto; margin-bottom: 16px; }
-    .contact-name {
-      font-family: var(--serif); font-size: 26px; font-weight: 400; color: var(--dark);
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--orange); }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form-group select option { background: var(--navy); color: var(--white); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .btn-submit {
+      width: 100%; background: var(--orange); color: var(--white); border: none;
+      padding: 13px 24px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: background 0.2s;
     }
-    .contact-title {
-      font-family: var(--sans); font-size: 11px; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange);
-      margin-top: 4px;
-    }
-    .contact-divider { height: 1px; background: #eee; }
-    .contact-details { display: flex; flex-direction: column; gap: 12px; }
-    .contact-row {
-      display: flex; align-items: center; gap: 12px;
-      font-size: 14px; color: #444;
-    }
-    .contact-row a { color: #444; text-decoration: none; transition: color 0.2s; }
-    .contact-row a:hover { color: var(--orange); }
-    .contact-icon {
-      width: 32px; height: 32px; background: var(--orange-pale);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; font-size: 14px;
-    }
-    .contact-cta {
-      background: var(--orange); color: #fff; border: none;
-      font-family: var(--sans); font-size: 12px; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 16px 24px; cursor: pointer; width: 100%;
-      transition: background 0.2s; text-align: center;
-      text-decoration: none; display: block;
-    }
-    .contact-cta:hover { background: var(--orange-light); }
+    .btn-submit:hover { background: var(--orange-dark); }
 
     /* ── FOOTER ── */
-    footer {
-      background: var(--dark); border-top: none;
-      padding: 40px; text-align: center;
-    }
-    .footer-logo { height: 48px; width: auto; margin: 0 auto 24px; display: block; opacity: 0.85; }
-    .footer-text { font-size: 11px; color: #888; line-height: 1.7; max-width: 700px; margin: 0 auto 16px; }
-    .footer-meta { font-size: 11px; color: #666; }
+    footer { background: #060f1a; padding: 1.85rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo img { height: 30px; width: auto; opacity: 0.65; }
+    .footer-text { font-size: 0.7rem; color: rgba(255,255,255,0.28); line-height: 1.6; max-width: 580px; }
+    .footer-links { display: flex; gap: 1.4rem; }
+    .footer-links a { font-size: 0.7rem; color: rgba(255,255,255,0.38); text-decoration: none; }
+    .footer-links a:hover { color: rgba(255,255,255,0.65); }
 
-    /* ── LIGHTBOX ── */
-    .lightbox {
-      display: none; position: fixed; inset: 0; z-index: 9999;
-      background: rgba(0,0,0,0.95); align-items: center; justify-content: center;
-    }
-    .lightbox.open { display: flex; }
-    .lightbox img { max-width: 90vw; max-height: 88vh; object-fit: contain; }
-    .lightbox-close {
-      position: absolute; top: 20px; right: 28px;
-      color: #fff; font-size: 32px; cursor: pointer; line-height: 1;
-      background: none; border: none; opacity: 0.7;
-    }
-    .lightbox-close:hover { opacity: 1; }
-    .lightbox-prev, .lightbox-next {
-      position: absolute; top: 50%; transform: translateY(-50%);
-      background: none; border: none; color: #fff; font-size: 36px;
-      cursor: pointer; opacity: 0.5; padding: 20px; line-height: 1;
-    }
-    .lightbox-prev:hover, .lightbox-next:hover { opacity: 1; }
-    .lightbox-prev { left: 10px; }
-    .lightbox-next { right: 10px; }
+    /* ── FADE IN ── */
+    .fi { opacity: 0; transform: translateY(18px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fi.vis { opacity: 1; transform: translateY(0); }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      nav { padding: 0 20px; }
+      .two-col, .proforma-grid, .lease-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; }
+      .highlights-grid, .demo-grid { grid-template-columns: 1fr 1fr; }
+      .metrics-bar-inner { grid-template-columns: repeat(3, 1fr); }
+      .cap-callout { grid-template-columns: repeat(2, 1fr); }
       .nav-links { display: none; }
-      .hero-content { padding: 0 20px 48px; }
-      .hero-badge, .hero-address { left: 20px; right: 20px; top: 72px; }
-      .hero-address { display: none; }
-      .stats-bar { grid-template-columns: repeat(2, 1fr); }
-      .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
-      #overview, #gallery, #location, #market, #contact { padding: 60px 20px; }
-      .overview-inner, .location-grid, .contact-inner { grid-template-columns: 1fr; gap: 48px; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-      .gallery-item.wide { grid-column: span 2; }
-      .market-stats { grid-template-columns: repeat(2, 1fr); }
-      .location-scores { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .highlights-grid, .demo-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item.featured { grid-column: span 2; }
+      .hero-content { padding: 0 20px 24px; }
+      .metrics-bar-inner { grid-template-columns: repeat(2, 1fr); }
+      .cap-callout { grid-template-columns: 1fr 1fr; }
+      .traffic-callout { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav id="main-nav">
-  <span class="nav-brand">2812 Williams Street · Savannah, GA</span>
-  <div class="nav-links">
-    <button onclick="scrollToSection('overview')" class="active">Overview</button>
-    <button onclick="scrollToSection('gallery')">Gallery</button>
-    <button onclick="scrollToSection('location')">Location</button>
-    <button onclick="scrollToSection('market')">Market</button>
-    <button onclick="scrollToSection('contact')">Contact</button>
+<nav>
+  <div class="nav-left">
+    <a href="#" class="nav-logo"><img src="web_images/pier-logo-nav.png" alt="PIER Commercial Real Estate" /></a>
+    <span class="nav-badge">Investment Offering · For Sale</span>
   </div>
-  <img src="web_images/pier-logo-nav.png" alt="PIER Commercial Real Estate" class="nav-logo" style="height:40px;width:auto;" />
+  <ul class="nav-links">
+    <li><a href="#overview" class="nav-link">Overview</a></li>
+    <li><a href="#proforma" class="nav-link">Proforma</a></li>
+    <li><a href="#lease" class="nav-link">Lease</a></li>
+    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+    <li><a href="#location" class="nav-link">Location</a></li>
+    <li><a href="#market" class="nav-link">Market</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Request Offering Package</a>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
-  <div class="hero-badge">For Lease · Immediate Occupancy</div>
-  <div class="hero-address">2812 Williams St · Savannah, GA 31404</div>
+  <div class="hero-badge-top">For Sale · Investment Offering</div>
+  <div class="hero-address-top">2812 Williams St · Savannah, GA 31404</div>
   <div class="hero-content">
     <div class="hero-eyebrow">Victory Drive Corridor · Savannah, Georgia</div>
     <h1 class="hero-title">2812 Williams<br>Street</h1>
-    <div class="hero-subtitle">2812 Williams Street · Victory Drive Corridor · Savannah, GA</div>
+    <p class="hero-subtitle">6,542 SF Income-Producing Commercial Property · Modified NNN Lease</p>
     <div class="hero-tags">
       <span>Office / Retail-Showroom</span>
       <span>6,542 SF</span>
       <span>1.04 Acres</span>
       <span>B-N Zoning</span>
     </div>
-    <div class="hero-lease">
-      <div class="hero-lease-label">Lease Rate</div>
-      <div class="hero-lease-value">Negotiable</div>
-      <div class="hero-lease-sub">Contact broker for terms · Immediate availability</div>
+    <div class="hero-price-row">
+      <div>
+        <div class="hero-price-label">Asking Price</div>
+        <div class="hero-price-value">$2,300,000</div>
+        <div class="hero-price-sub">$351.57 / SF &nbsp;·&nbsp; Offers Invited</div>
+      </div>
+      <div class="hero-cap-pill">6.2% Cap Rate</div>
     </div>
   </div>
 </section>
 
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="stat-item">
-    <div class="stat-value">6,542</div>
-    <div class="stat-label">Total Sq. Ft.</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-value">1.04</div>
-    <div class="stat-label">Acres</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-value">28+</div>
-    <div class="stat-label">Parking Spaces</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-value">1997</div>
-    <div class="stat-label">Year Built</div>
+<!-- METRICS BAR -->
+<div class="metrics-bar">
+  <div class="metrics-bar-inner">
+    <div class="metric-item">
+      <span class="metric-value hl">$150,466</span>
+      <span class="metric-label">Gross Potential Rent / Yr</span>
+    </div>
+    <div class="metric-item">
+      <span class="metric-value hl">$142,655</span>
+      <span class="metric-label">Stabilized NOI</span>
+    </div>
+    <div class="metric-item">
+      <span class="metric-value">6.20%</span>
+      <span class="metric-label">Cap Rate (Stabilized)</span>
+    </div>
+    <div class="metric-item">
+      <span class="metric-value">$23.00</span>
+      <span class="metric-label">Base Rent / SF / Yr</span>
+    </div>
+    <div class="metric-item">
+      <span class="metric-value">6,542</span>
+      <span class="metric-label">Total Square Feet</span>
+    </div>
   </div>
 </div>
 
-<!-- OVERVIEW -->
+<!-- INVESTMENT OVERVIEW -->
 <section id="overview">
-  <div class="overview-inner">
-    <div>
-      <div class="section-eyebrow">Property Description</div>
-      <h2 class="section-title">A Strategic<br>Position in<br>Savannah's<br>Hottest Corridor</h2>
-      <div class="section-body">
-        <p>This single-story, 6,542 SF building sits at the intersection of Williams Street and Grenoble Street, steps from Victory Drive and the Truman Expressway — Savannah's most rapidly evolving commercial and residential corridor. The property was recently acquired by a local investor and is immediately available for lease.</p>
-        <p>Originally built as a medical office facility, the building features an intelligent layout with three expansive open areas, a reception zone, five restrooms, multiple private offices, a conference room, and a staff lounge. A Cummins diesel generator on a concrete pad ensures uninterrupted operations — a rare and valuable feature for any business requiring continuous power.</p>
-        <p>An overhead drive-in door and rear loading ramp with double doors add exceptional utility for showroom, service, or distribution tenants. With 28+ parking spaces across three lots and dual-street frontage, this property delivers the visibility, accessibility, and infrastructure that serious operators demand.</p>
+  <div class="section-inner">
+    <div class="two-col">
+      <div class="overview-text fi">
+        <div class="section-label">Investment Overview</div>
+        <h2 class="section-title">A Positioned Asset in Savannah's Most Active Corridor</h2>
+        <p>This 6,542 SF single-story commercial building at 2812 Williams Street represents a compelling income-producing acquisition opportunity in the heart of Savannah's Victory Drive Corridor — one of the city's most rapidly evolving commercial and residential growth zones.</p>
+        <p>The property is offered with a <strong>Modified NNN lease structure at $23.00/SF annually</strong>, generating $150,466 in gross potential rent. Under this structure, the tenant assumes responsibility for all operating expenses — property taxes, insurance, utilities, and maintenance — with the landlord retaining only Roof and Structure obligations. This creates an exceptionally clean, low-management income stream.</p>
+        <p>The building sits on <strong>1.04 acres with 28+ parking spaces</strong> across three lots, dual-street frontage, and a drive-in loading door — features that command premium rents and attract quality tenants. The property is immediately adjacent to national retailers including Whole Foods, ALDI, Target, and Home Depot, providing exceptional co-tenancy and foot traffic dynamics.</p>
+        <p>At <strong>$2,300,000 ($351.57/SF)</strong>, this offering delivers a <strong>6.20% stabilized cap rate</strong> — a strong risk-adjusted return in a high-growth coastal Georgia submarket with limited comparable supply.</p>
+      </div>
+      <div class="fi">
+        <div class="spec-table">
+          <div class="spec-table-header">Property Specifications</div>
+          <div class="spec-row"><span class="spec-key">Address</span><span class="spec-val">2812 Williams Street, Savannah, GA 31404</span></div>
+          <div class="spec-row"><span class="spec-key">Parcel ID</span><span class="spec-val">2-0084-04-014</span></div>
+          <div class="spec-row"><span class="spec-key">Building Size</span><span class="spec-val hl">6,542 SF (6,644 SF under roof)</span></div>
+          <div class="spec-row"><span class="spec-key">Lot Size</span><span class="spec-val">1.04 Acres / 45,324 SF</span></div>
+          <div class="spec-row"><span class="spec-key">Year Built</span><span class="spec-val">1997</span></div>
+          <div class="spec-row"><span class="spec-key">Construction</span><span class="spec-val">Masonry / Brick · Terracotta Roof</span></div>
+          <div class="spec-row"><span class="spec-key">Zoning</span><span class="spec-val">B-N (Neighborhood Business)</span></div>
+          <div class="spec-row"><span class="spec-key">Parking</span><span class="spec-val">28+ Spaces (3 lots)</span></div>
+          <div class="spec-row"><span class="spec-key">Lease Type</span><span class="spec-val hl">Modified NNN</span></div>
+          <div class="spec-row"><span class="spec-key">Base Rent</span><span class="spec-val hl">$23.00/SF/Yr · $150,466/Yr</span></div>
+          <div class="spec-row"><span class="spec-key">Monthly Rent</span><span class="spec-val hl">$12,539/Mo</span></div>
+          <div class="spec-row"><span class="spec-key">Asking Price</span><span class="spec-val hl">$2,300,000 ($351.57/SF)</span></div>
+          <div class="spec-row"><span class="spec-key">Cap Rate</span><span class="spec-val hl">6.20% (Stabilized)</span></div>
+          <div class="spec-row"><span class="spec-key">Last Sale</span><span class="spec-val">Sept. 2024 · $1,728,000</span></div>
+          <div class="spec-row"><span class="spec-key">County Appraisal</span><span class="spec-val">$1,292,200 (2025)</span></div>
+          <div class="spec-row"><span class="spec-key">Annual Taxes</span><span class="spec-val">$14,880.46 (NNN — Tenant)</span></div>
+          <div class="spec-row"><span class="spec-key">Generator</span><span class="spec-val">Cummins Diesel (on-site, operational)</span></div>
+          <div class="spec-row"><span class="spec-key">Loading</span><span class="spec-val">Overhead Drive-In Door + Rear Ramp</span></div>
+        </div>
       </div>
     </div>
-    <div>
-      <table class="spec-table">
-        <tr><td>Address</td><td>2812 Williams Street, Savannah, GA 31404</td></tr>
-        <tr><td>Parcel ID</td><td>2-0084-04-014</td></tr>
-        <tr><td>Year Built</td><td>1997</td></tr>
-        <tr><td>Total Building Area</td><td>6,542 SF (6,644 SF under roof)</td></tr>
-        <tr><td>Lease Rate</td><td>Negotiable · Contact Broker</td></tr>
-        <tr><td>Available Space</td><td>6,542 SF · Immediate Availability</td></tr>
-        <tr><td>Lot Size</td><td>1.04 Acres / 45,324 SF</td></tr>
-        <tr><td>Stories</td><td>1</td></tr>
-        <tr><td>Building Height</td><td>22 ft.</td></tr>
-        <tr><td>Construction</td><td>Masonry / Brick with Terracotta Roof</td></tr>
-        <tr><td>Zoning</td><td>B-N (Neighborhood Business)</td></tr>
-        <tr><td>Parking</td><td>28 spaces (3 lots — north, main, south)</td></tr>
-        <tr><td>Generator</td><td>Cummins Diesel (operating, on concrete pad)</td></tr>
-        <tr><td>Loading</td><td>Overhead drive-in door + rear ramp w/ double doors</td></tr>
-        <tr><td>Restrooms</td><td>5 (ADA compliant)</td></tr>
-        <tr><td>County Appraised Value (2025)</td><td>$1,292,200</td></tr>
-        <tr><td>Annual Property Taxes (2025)</td><td>$14,880.46</td></tr>
-        <tr><td>Last Sale</td><td>Sept. 2024 · $1,728,000</td></tr>
-      </table>
+  </div>
+</section>
+
+<!-- INVESTMENT HIGHLIGHTS -->
+<section id="highlights">
+  <div class="section-inner">
+    <div class="fi" style="text-align:center;">
+      <div class="section-label">Why This Asset</div>
+      <h2 class="section-title">Six Reasons This Investment Stands Apart</h2>
+    </div>
+    <div class="highlights-grid">
+      <div class="highlight-card fi">
+        <span class="highlight-icon">📍</span>
+        <div class="highlight-title">Irreplaceable Corridor Location</div>
+        <p class="highlight-text">Positioned steps from Victory Drive and the Truman Expressway — Savannah's most active commercial growth zone — with direct adjacency to Whole Foods, ALDI, Target, and Home Depot. This co-tenancy environment is not replicable at this price point.</p>
+      </div>
+      <div class="highlight-card fi">
+        <span class="highlight-icon">💼</span>
+        <div class="highlight-title">Clean Modified NNN Structure</div>
+        <p class="highlight-text">Tenant bears all operating expenses including taxes, insurance, utilities, and maintenance. Landlord retains only Roof and Structure obligations — creating a near-passive income stream with minimal management burden and predictable cash flow.</p>
+      </div>
+      <div class="highlight-card fi">
+        <span class="highlight-icon">📈</span>
+        <div class="highlight-title">6.20% Stabilized Cap Rate</div>
+        <p class="highlight-text">At $2,300,000 and $142,655 stabilized NOI, this offering delivers a 6.20% cap rate — a strong risk-adjusted return in a coastal Georgia market where quality commercial assets trade at compressed yields. Immediate income from day one.</p>
+      </div>
+      <div class="highlight-card fi">
+        <span class="highlight-icon">🏗️</span>
+        <div class="highlight-title">Functional Versatility</div>
+        <p class="highlight-text">Three expansive open areas, private offices, conference room, staff lounge, five restrooms, overhead drive-in door, and rear loading ramp. The floor plan accommodates office, retail-showroom, service, medical, or distribution uses — broadening the tenant universe.</p>
+      </div>
+      <div class="highlight-card fi">
+        <span class="highlight-icon">⚡</span>
+        <div class="highlight-title">Rare Infrastructure Assets</div>
+        <p class="highlight-text">An operational Cummins diesel generator on a concrete pad provides uninterrupted power — a feature that commands premium rents from medical, tech, and mission-critical tenants. Combined with 28+ parking spaces and dual-street frontage, this property is operationally superior.</p>
+      </div>
+      <div class="highlight-card fi">
+        <span class="highlight-icon">🏙️</span>
+        <div class="highlight-title">Growth Market Fundamentals</div>
+        <p class="highlight-text">83,318 residents within 3 miles with $79K average household income. The Victory Drive corridor is experiencing active residential densification — Aventon Victory luxury apartments are steps away — driving sustained retail and commercial demand in this submarket.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFORMA -->
+<section id="proforma">
+  <div class="section-inner">
+    <div class="fi" style="text-align:center;">
+      <div class="section-label lt">Investment Proforma</div>
+      <h2 class="section-title lt">The Numbers</h2>
+      <p style="max-width:680px;margin:0.7rem auto 0;font-size:0.94rem;color:rgba(255,255,255,0.5);line-height:1.8;">
+        Based on $23.00/SF/Yr Modified NNN lease. Tenant pays all operating expenses except Roof &amp; Structure. Landlord reserves reflect industry-standard maintenance obligations for a masonry building of this age.
+      </p>
+    </div>
+    <div class="proforma-grid fi">
+      <div class="proforma-card">
+        <div class="proforma-card-header">Income Analysis</div>
+        <div class="proforma-row"><span class="proforma-key">Building Size</span><span class="proforma-val">6,542 SF</span></div>
+        <div class="proforma-row"><span class="proforma-key">Base Rent Rate</span><span class="proforma-val">$23.00 / SF / Yr</span></div>
+        <div class="proforma-row"><span class="proforma-key">Gross Potential Rent</span><span class="proforma-val pos">$150,466 / Yr</span></div>
+        <div class="proforma-row"><span class="proforma-key">Vacancy Allowance (5%)</span><span class="proforma-val neg">($7,523)</span></div>
+        <div class="proforma-row total"><span class="proforma-key" style="color:rgba(255,255,255,0.85);font-weight:700;">Effective Gross Income</span><span class="proforma-val tot-v">$142,943 / Yr</span></div>
+      </div>
+      <div class="proforma-card">
+        <div class="proforma-card-header">Landlord Expenses (Roof &amp; Structure Only)</div>
+        <div class="proforma-row"><span class="proforma-key">Roof Reserve ($0.20/SF)</span><span class="proforma-val neg">($1,308)</span></div>
+        <div class="proforma-row"><span class="proforma-key">Structure Reserve ($0.12/SF)</span><span class="proforma-val neg">($785)</span></div>
+        <div class="proforma-row"><span class="proforma-key">Management Fee (4% EGI)</span><span class="proforma-val neg">($5,718)</span></div>
+        <div class="proforma-row"><span class="proforma-key">Property Taxes</span><span class="proforma-val pos">Tenant (NNN)</span></div>
+        <div class="proforma-row"><span class="proforma-key">Insurance</span><span class="proforma-val pos">Tenant (NNN)</span></div>
+        <div class="proforma-row"><span class="proforma-key">Utilities / Maintenance / CAM</span><span class="proforma-val pos">Tenant (NNN)</span></div>
+        <div class="proforma-row total"><span class="proforma-key" style="color:rgba(255,255,255,0.85);font-weight:700;">Total Landlord Expenses</span><span class="proforma-val neg">($7,811)</span></div>
+      </div>
+    </div>
+    <div class="cap-callout fi">
+      <div class="cap-stat"><span class="cap-stat-value grn">$142,655</span><span class="cap-stat-label">Stabilized NOI (Full Occupancy)</span></div>
+      <div class="cap-stat"><span class="cap-stat-value grn">6.20%</span><span class="cap-stat-label">Stabilized Cap Rate</span></div>
+      <div class="cap-stat"><span class="cap-stat-value orn">$2,300,000</span><span class="cap-stat-label">Asking Price</span></div>
+      <div class="cap-stat"><span class="cap-stat-value">$351.57</span><span class="cap-stat-label">Price Per Square Foot</span></div>
+    </div>
+    <p class="proforma-disclaimer">Proforma is for informational purposes only. All figures are estimates based on the stated lease rate and industry-standard reserves. Actual income, expenses, and returns may vary. Prospective purchasers are encouraged to conduct independent due diligence. This offering is subject to prior sale or withdrawal without notice. All information believed reliable but not guaranteed.</p>
+  </div>
+</section>
+
+<!-- LEASE STRUCTURE -->
+<section id="lease">
+  <div class="section-inner">
+    <div class="fi">
+      <div class="section-label">Lease Structure</div>
+      <h2 class="section-title">Modified NNN — Maximum Landlord Protection</h2>
+      <p class="section-intro">The property is offered with a Modified NNN lease structure that places virtually all operating risk on the tenant, creating a clean, predictable income stream for the investor with minimal ongoing obligations.</p>
+    </div>
+    <div class="lease-grid fi">
+      <div class="lease-card">
+        <div class="lease-card-title">Lease Terms at a Glance</div>
+        <div class="lease-item">
+          <span class="lease-item-icon">💰</span>
+          <div>
+            <div class="lease-item-label">Base Rent</div>
+            <div class="lease-item-value">$23.00 per SF per Year</div>
+            <div class="lease-item-note">$150,466 annually · $12,539/month</div>
+          </div>
+        </div>
+        <div class="lease-item">
+          <span class="lease-item-icon">📋</span>
+          <div>
+            <div class="lease-item-label">Lease Type</div>
+            <div class="lease-item-value">Modified NNN (Net Net Net)</div>
+            <div class="lease-item-note">Tenant pays all expenses except Roof &amp; Structure</div>
+          </div>
+        </div>
+        <div class="lease-item">
+          <span class="lease-item-icon">🏢</span>
+          <div>
+            <div class="lease-item-label">Landlord Obligations</div>
+            <div class="lease-item-value">Roof &amp; Structural Repairs Only</div>
+            <div class="lease-item-note">All other expenses are tenant responsibility</div>
+          </div>
+        </div>
+        <div class="lease-item">
+          <span class="lease-item-icon">📐</span>
+          <div>
+            <div class="lease-item-label">Leasable Area</div>
+            <div class="lease-item-value">6,542 SF (entire building)</div>
+            <div class="lease-item-note">Single-tenant or divisible for multi-tenant</div>
+          </div>
+        </div>
+        <div class="lease-item">
+          <span class="lease-item-icon">🚗</span>
+          <div>
+            <div class="lease-item-label">Parking</div>
+            <div class="lease-item-value">28+ Dedicated Spaces</div>
+            <div class="lease-item-note">Three lots — north, main, and south</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="expense-title">Expense Responsibility Matrix</div>
+        <div class="expense-row"><span class="expense-party">Property Taxes</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Property Insurance</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Utilities (Electric, Water, Gas)</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">HVAC Maintenance &amp; Repair</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Parking Lot Maintenance</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Landscaping / Grounds</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Janitorial / Interior Maintenance</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Pest Control</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Generator Maintenance</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Roof Repairs &amp; Replacement</span><span class="expense-badge badge-l">Landlord</span></div>
+        <div class="expense-row"><span class="expense-party">Structural Repairs</span><span class="expense-badge badge-l">Landlord</span></div>
+        <div class="investor-note">
+          <p><strong>Investor Takeaway:</strong> The Modified NNN structure means your only ongoing financial obligation is roof and structural maintenance — typically budgeted at $0.32/SF/yr ($2,093/yr). All other operating costs are passed through to the tenant, creating a near-passive income stream with predictable, low-variance cash flow.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
-  <div class="gallery-inner">
-    <div class="gallery-header">
-      <div class="section-eyebrow">Property Photography</div>
-      <h2 class="section-title">See Every<br>Square Foot</h2>
+  <div class="section-inner">
+    <div class="fi">
+      <div class="section-label">Property Photography</div>
+      <h2 class="section-title">See Every Square Foot</h2>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item wide" onclick="openLightbox(0)">
-        <img src="web_images/hero_aerial.jpg" alt="Aerial view showing property and surrounding retail" loading="lazy" />
-        <div class="gallery-caption">Aerial · Victory Drive Corridor Context</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(1)">
-        <img src="web_images/aerial_context.jpg" alt="Aerial context showing adjacent retailers" loading="lazy" />
-        <div class="gallery-caption">Aerial · Surrounding Developments</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(2)">
-        <img src="web_images/exterior_front.jpg" alt="Building exterior front view" loading="lazy" />
-        <div class="gallery-caption">Exterior · Front Facade</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(3)">
-        <img src="web_images/exterior_entrance.jpg" alt="Covered entrance and porch" loading="lazy" />
-        <div class="gallery-caption">Exterior · Covered Entrance</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(4)">
-        <img src="web_images/exterior_parking.jpg" alt="Parking lot view" loading="lazy" />
-        <div class="gallery-caption">Exterior · Parking</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(5)">
-        <img src="web_images/exterior_side.jpg" alt="Building side view" loading="lazy" />
-        <div class="gallery-caption">Exterior · Side View</div>
-      </div>
-      <div class="gallery-item wide" onclick="openLightbox(6)">
-        <img src="web_images/interior_large1.jpg" alt="Large open interior area" loading="lazy" />
-        <div class="gallery-caption">Interior · Open Area</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(7)">
-        <img src="web_images/interior_large2.jpg" alt="Second large open area" loading="lazy" />
-        <div class="gallery-caption">Interior · Open Area 2</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(8)">
-        <img src="web_images/interior_open1.jpg" alt="Interior open space" loading="lazy" />
-        <div class="gallery-caption">Interior · Open Space</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(9)">
-        <img src="web_images/interior_open2.jpg" alt="Interior with cabinetry" loading="lazy" />
-        <div class="gallery-caption">Interior · Built-In Cabinetry</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(10)">
-        <img src="web_images/interior_office1.jpg" alt="Private office" loading="lazy" />
-        <div class="gallery-caption">Interior · Private Office</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(11)">
-        <img src="web_images/interior_office2.jpg" alt="Second private office" loading="lazy" />
-        <div class="gallery-caption">Interior · Private Office 2</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(12)">
-        <img src="web_images/interior_hall.jpg" alt="Interior hallway" loading="lazy" />
-        <div class="gallery-caption">Interior · Corridor</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(13)">
-        <img src="web_images/interior_breakroom.jpg" alt="Staff lounge / break room" loading="lazy" />
-        <div class="gallery-caption">Interior · Staff Lounge</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(14)">
-        <img src="web_images/interior_loading.jpg" alt="Loading area with overhead door" loading="lazy" />
-        <div class="gallery-caption">Interior · Loading / Drive-In Door</div>
-      </div>
-      <div class="gallery-item" onclick="openLightbox(15)">
-        <img src="web_images/interior_restroom.jpg" alt="ADA restroom" loading="lazy" />
-        <div class="gallery-caption">Interior · ADA Restroom</div>
-      </div>
+    <div class="gallery-grid fi" id="galleryGrid">
+      <div class="gallery-item featured" data-idx="0"><img src="web_images/aerial_context.jpg" alt="Aerial — Victory Drive Corridor Context" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Aerial · Victory Drive Corridor Context</span></div></div>
+      <div class="gallery-item" data-idx="1"><img src="web_images/aerial_alt.jpg" alt="Aerial — Surrounding Developments" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Aerial · Surrounding Developments</span></div></div>
+      <div class="gallery-item" data-idx="2"><img src="web_images/exterior_front.jpg" alt="Exterior — Front Facade" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Exterior · Front Facade</span></div></div>
+      <div class="gallery-item" data-idx="3"><img src="web_images/exterior_entrance.jpg" alt="Exterior — Covered Entrance" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Exterior · Covered Entrance</span></div></div>
+      <div class="gallery-item" data-idx="4"><img src="web_images/exterior_parking.jpg" alt="Exterior — Parking" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Exterior · Parking</span></div></div>
+      <div class="gallery-item" data-idx="5"><img src="web_images/exterior_side.jpg" alt="Exterior — Side View" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Exterior · Side View</span></div></div>
+      <div class="gallery-item" data-idx="6"><img src="web_images/interior_open1.jpg" alt="Interior — Open Area" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Open Area</span></div></div>
+      <div class="gallery-item" data-idx="7"><img src="web_images/interior_open2.jpg" alt="Interior — Open Area 2" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Open Area 2</span></div></div>
+      <div class="gallery-item" data-idx="8"><img src="web_images/interior_open3.jpg" alt="Interior — Open Space" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Open Space</span></div></div>
+      <div class="gallery-item" data-idx="9"><img src="web_images/interior_open4.jpg" alt="Interior — Built-In Cabinetry" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Built-In Cabinetry</span></div></div>
+      <div class="gallery-item" data-idx="10"><img src="web_images/interior_office1.jpg" alt="Interior — Private Office" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Private Office</span></div></div>
+      <div class="gallery-item" data-idx="11"><img src="web_images/interior_office2.jpg" alt="Interior — Private Office 2" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Private Office 2</span></div></div>
+      <div class="gallery-item" data-idx="12"><img src="web_images/interior_hall.jpg" alt="Interior — Corridor" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Corridor</span></div></div>
+      <div class="gallery-item" data-idx="13"><img src="web_images/interior_breakroom.jpg" alt="Interior — Staff Lounge" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Staff Lounge</span></div></div>
+      <div class="gallery-item" data-idx="14"><img src="web_images/interior_loading.jpg" alt="Interior — Drive-In Loading Door" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · Drive-In Loading Door</span></div></div>
+      <div class="gallery-item" data-idx="15"><img src="web_images/interior_restroom.jpg" alt="Interior — ADA Restroom" loading="lazy" /><div class="gallery-overlay"><span class="gallery-caption">Interior · ADA Restroom</span></div></div>
     </div>
   </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lbClose">&times;</button>
+  <button class="lightbox-prev" id="lbPrev">&#8249;</button>
+  <img class="lightbox-img" id="lbImg" src="" alt="" />
+  <button class="lightbox-next" id="lbNext">&#8250;</button>
+</div>
 
 <!-- LOCATION -->
 <section id="location">
-  <div class="location-inner">
-    <div class="section-eyebrow">Location</div>
-    <h2 class="section-title">The Victory Drive<br>Corridor</h2>
-    <div class="location-grid">
-      <div>
-        <img src="web_images/aerial_context.jpg" alt="Aerial showing surrounding retail and development" class="location-image" />
+  <div class="section-inner">
+    <div class="fi">
+      <div class="section-label">Location &amp; Context</div>
+      <h2 class="section-title">The Victory Drive Corridor</h2>
+    </div>
+    <div class="location-grid fi">
+      <div class="submarket-text">
+        <p>2812 Williams Street sits at the intersection of Williams Street and Grenoble Street, steps from Victory Drive (US-80) and the Truman Expressway — Savannah's most rapidly evolving commercial and residential corridor. The property is surrounded by a dense concentration of national retailers and new residential development that drives consistent foot traffic and consumer spending in the immediate trade area.</p>
+        <p>The corridor has seen significant investment in recent years, anchored by the Aventon Victory luxury apartment development steps away and the ongoing densification of the Victory Drive retail strip. This is not a speculative location — it is an established, active consumer market with proven demand.</p>
+        <div class="traffic-callout">
+          <div class="traffic-stat"><span class="traffic-value">83K+</span><span class="traffic-label">Population (3 mi)</span></div>
+          <div class="traffic-stat"><span class="traffic-value">$79K</span><span class="traffic-label">Avg HH Income (3 mi)</span></div>
+          <div class="traffic-stat"><span class="traffic-value">34K+</span><span class="traffic-label">Households (3 mi)</span></div>
+        </div>
       </div>
       <div>
-        <div class="location-scores">
-          <div class="score-item">
-            <div class="score-value">Adjacent</div>
-            <div class="score-label">Whole Foods</div>
-            <div class="score-sub">Premium grocery anchor</div>
-          </div>
-          <div class="score-item">
-            <div class="score-value">Adjacent</div>
-            <div class="score-label">ALDI</div>
-            <div class="score-sub">New store, daily traffic</div>
-          </div>
-          <div class="score-item">
-            <div class="score-value">Nearby</div>
-            <div class="score-label">Target</div>
-            <div class="score-sub">Major retail anchor</div>
-          </div>
-          <div class="score-item">
-            <div class="score-value">Nearby</div>
-            <div class="score-label">Home Depot</div>
-            <div class="score-sub">Major retail anchor</div>
-          </div>
+        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-light);margin-bottom:0.9rem;">Surrounding National Retailers &amp; Anchors</div>
+        <div class="retailer-grid">
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">Whole Foods Market</div><div class="retailer-dist">Adjacent</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">ALDI</div><div class="retailer-dist">Adjacent · New Store</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">CAVA</div><div class="retailer-dist">Adjacent</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">Aventon Victory</div><div class="retailer-dist">Steps Away · Luxury Apts</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">Target</div><div class="retailer-dist">Nearby</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">Home Depot</div><div class="retailer-dist">Nearby</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">PetSmart</div><div class="retailer-dist">Nearby</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">Floor &amp; Decor</div><div class="retailer-dist">Nearby</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">AutoZone</div><div class="retailer-dist">Adjacent</div></div></div>
+          <div class="retailer-card"><div class="retailer-dot"></div><div><div class="retailer-name">Truman Expressway</div><div class="retailer-dist">Seconds Away</div></div></div>
         </div>
-        <div class="section-eyebrow" style="margin-top:8px;">Surrounding Uses</div>
-        <ul class="neighbors-list">
-          <li><span class="neighbor-name">Whole Foods Market</span><span class="neighbor-dist">Adjacent</span></li>
-          <li><span class="neighbor-name">ALDI</span><span class="neighbor-dist">Adjacent</span></li>
-          <li><span class="neighbor-name">CAVA</span><span class="neighbor-dist">Adjacent</span></li>
-          <li><span class="neighbor-name">Aventon Victory Luxury Apartments</span><span class="neighbor-dist">Steps Away</span></li>
-          <li><span class="neighbor-name">Target</span><span class="neighbor-dist">Nearby</span></li>
-          <li><span class="neighbor-name">Home Depot</span><span class="neighbor-dist">Nearby</span></li>
-          <li><span class="neighbor-name">PetSmart</span><span class="neighbor-dist">Nearby</span></li>
-          <li><span class="neighbor-name">Floor &amp; Decor</span><span class="neighbor-dist">Nearby</span></li>
-          <li><span class="neighbor-name">AutoZone</span><span class="neighbor-dist">Nearby</span></li>
-          <li><span class="neighbor-name">Truman Expressway</span><span class="neighbor-dist">Seconds Away</span></li>
-          <li><span class="neighbor-name">Victory Drive (US-80)</span><span class="neighbor-dist">Fronts</span></li>
-        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MARKET -->
+<!-- MARKET DEMOGRAPHICS -->
 <section id="market">
-  <div class="market-inner">
-    <div class="section-eyebrow">Market Overview</div>
-    <h2 class="section-title">The Customer Base<br>Is Already Here</h2>
-    <p style="color:#555; font-size:15px; max-width:680px; line-height:1.8;">Over 83,000 people live within 3 miles of this property, with average household incomes approaching $80,000. This is a proven, active consumer market — not a speculative one. The Victory Drive corridor is Savannah's most active commercial and residential growth zone.</p>
-
-    <div class="market-stats">
-      <div class="market-stat">
-        <div class="market-stat-value">83,318</div>
-        <div class="market-stat-label">Population (3 mi)</div>
-        <div class="market-stat-sub">129,522 within 5 miles</div>
+  <div class="section-inner">
+    <div class="fi" style="text-align:center;">
+      <div class="section-label">Market Demographics</div>
+      <h2 class="section-title">The Customer Base Is Already Here</h2>
+      <p class="section-intro" style="margin:0.7rem auto 0;text-align:center;">Over 83,000 people live within 3 miles of this property with average household incomes approaching $80,000. This is a proven, active consumer market — not a speculative one.</p>
+    </div>
+    <div class="demo-grid fi">
+      <div class="demo-card">
+        <div class="demo-card-header">1-Mile Radius</div>
+        <div class="demo-row"><span class="demo-key">Total Population</span><span class="demo-val">13,951</span></div>
+        <div class="demo-row"><span class="demo-key">Total Households</span><span class="demo-val">6,117</span></div>
+        <div class="demo-row"><span class="demo-key">Avg HH Income</span><span class="demo-val">$73,059</span></div>
+        <div class="demo-row"><span class="demo-key">Average Age</span><span class="demo-val">41</span></div>
+        <div class="demo-row"><span class="demo-key">Avg Home Value</span><span class="demo-val">$301,129</span></div>
+        <div class="demo-row"><span class="demo-key">Persons per HH</span><span class="demo-val">2.3</span></div>
       </div>
-      <div class="market-stat">
-        <div class="market-stat-value">$79K</div>
-        <div class="market-stat-label">Avg. HH Income (3 mi)</div>
-        <div class="market-stat-sub">$82,037 within 5 miles</div>
+      <div class="demo-card">
+        <div class="demo-card-header">3-Mile Radius</div>
+        <div class="demo-row"><span class="demo-key">Total Population</span><span class="demo-val">83,318</span></div>
+        <div class="demo-row"><span class="demo-key">Total Households</span><span class="demo-val">34,499</span></div>
+        <div class="demo-row"><span class="demo-key">Avg HH Income</span><span class="demo-val">$79,217</span></div>
+        <div class="demo-row"><span class="demo-key">Average Age</span><span class="demo-val">39</span></div>
+        <div class="demo-row"><span class="demo-key">Avg Home Value</span><span class="demo-val">$430,256</span></div>
+        <div class="demo-row"><span class="demo-key">Persons per HH</span><span class="demo-val">2.4</span></div>
       </div>
-      <div class="market-stat">
-        <div class="market-stat-value">34,499</div>
-        <div class="market-stat-label">Households (3 mi)</div>
-        <div class="market-stat-sub">53,536 within 5 miles</div>
-      </div>
-      <div class="market-stat">
-        <div class="market-stat-value">$430K</div>
-        <div class="market-stat-label">Avg. Home Value (3 mi)</div>
-        <div class="market-stat-sub">Established residential base</div>
+      <div class="demo-card">
+        <div class="demo-card-header">5-Mile Radius</div>
+        <div class="demo-row"><span class="demo-key">Total Population</span><span class="demo-val">129,522</span></div>
+        <div class="demo-row"><span class="demo-key">Total Households</span><span class="demo-val">53,536</span></div>
+        <div class="demo-row"><span class="demo-key">Avg HH Income</span><span class="demo-val">$82,037</span></div>
+        <div class="demo-row"><span class="demo-key">Average Age</span><span class="demo-val">39</span></div>
+        <div class="demo-row"><span class="demo-key">Avg Home Value</span><span class="demo-val">$394,820</span></div>
+        <div class="demo-row"><span class="demo-key">Persons per HH</span><span class="demo-val">2.4</span></div>
       </div>
     </div>
-
-    <div class="demo-table-wrap">
-      <div class="demo-table-title">Demographics Summary</div>
-      <table class="demo-table">
-        <thead>
-          <tr>
-            <th>Metric</th>
-            <th>1 Mile</th>
-            <th>3 Miles</th>
-            <th>5 Miles</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Total Population</td><td>13,951</td><td>83,318</td><td>129,522</td></tr>
-          <tr><td>Total Households</td><td>6,117</td><td>34,499</td><td>53,536</td></tr>
-          <tr><td>Average HH Income</td><td>$73,059</td><td>$79,217</td><td>$82,037</td></tr>
-          <tr><td>Average Age</td><td>41</td><td>39</td><td>39</td></tr>
-          <tr><td>Avg. House Value</td><td>$301,129</td><td>$430,256</td><td>$394,820</td></tr>
-          <tr><td>Persons per HH</td><td>2.3</td><td>2.4</td><td>2.4</td></tr>
-        </tbody>
-      </table>
-      <div class="demo-source">Demographics data derived from AlphaMap. Data current as of offering date.</div>
-    </div>
+    <p class="demo-source fi">Demographics data derived from AlphaMap. Data current as of offering date.</p>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-inner">
-    <div class="contact-left">
-      <div class="section-eyebrow">Exclusive Listing Broker</div>
-      <h2 class="section-title">PIER Commercial<br>Real Estate</h2>
-      <p class="contact-body">For additional information, including lease terms, floor plan, ALTA survey, and to schedule a private property tour, please contact the exclusive listing broker.</p>
-      <p class="contact-body">The Victory Drive corridor is moving fast. New luxury residential, national retail, and a resurgent commercial market are converging at this exact location. The tenant who moves first wins the position.</p>
-    </div>
-    <div>
-      <div class="contact-card">
-        <div>
-          <img src="web_images/pier-logo-full.png" alt="PIER Commercial Real Estate" class="contact-logo" style="height:60px;width:auto;margin-bottom:16px;" />
-        </div>
-        <div>
-          <div class="contact-name">Ryan T. Schneider, CCIM</div>
-          <div class="contact-title">President &amp; Broker · PIER Commercial Real Estate</div>
-        </div>
-        <div class="contact-divider"></div>
-        <div class="contact-details">
-          <div class="contact-row">
-            <div class="contact-icon">📞</div>
-            <a href="tel:9122396298">912.239.6298</a>
-          </div>
-          <div class="contact-row">
-            <div class="contact-icon">✉️</div>
-            <a href="mailto:ryan@piercommercial.com">ryan@piercommercial.com</a>
-          </div>
-          <div class="contact-row">
-            <div class="contact-icon">🌐</div>
-            <a href="https://www.piercommercial.com" target="_blank">www.piercommercial.com</a>
-          </div>
-          <div class="contact-row">
-            <div class="contact-icon">📍</div>
-            <span>5105 Paulsen Street, Savannah, GA 31405</span>
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="fi">
+        <div class="section-label lt">Exclusive Listing Broker</div>
+        <h2 class="section-title lt">PIER Commercial<br>Real Estate</h2>
+        <p class="contact-text">For additional information, including offering memorandum, lease terms, floor plan, ALTA survey, and to schedule a private property tour, please contact the exclusive listing broker. All inquiries are held in strict confidence.</p>
+        <p class="contact-text" style="font-size:0.86rem;color:rgba(255,255,255,0.4);">The Victory Drive corridor is moving fast. New luxury residential, national retail, and a resurgent commercial market are converging at this exact location. The investor who moves first secures the position.</p>
+        <div class="broker-card">
+          <div class="broker-name">Ryan T. Schneider, CCIM</div>
+          <div class="broker-title">President &amp; Broker · PIER Commercial Real Estate</div>
+          <div class="broker-contact">
+            <a href="tel:9122396298"><span class="broker-contact-icon">📞</span> 912.239.6298</a>
+            <a href="mailto:ryan@piercommercial.com"><span class="broker-contact-icon">✉️</span> ryan@piercommercial.com</a>
+            <a href="https://www.piercommercial.com" target="_blank"><span class="broker-contact-icon">🌐</span> www.piercommercial.com</a>
+            <a href="#"><span class="broker-contact-icon">📍</span> 5105 Paulsen Street, Savannah, GA 31405</a>
           </div>
         </div>
-        <a href="mailto:ryan@piercommercial.com?subject=Tour Request — 2812 Williams Street" class="contact-cta">Request a Tour</a>
+      </div>
+      <div class="fi">
+        <div class="contact-form">
+          <h3>Request Offering Package</h3>
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" placeholder="First name" /></div>
+            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last name" /></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="(000) 000-0000" /></div>
+          <div class="form-group">
+            <label>Investor Type</label>
+            <select>
+              <option value="">Select...</option>
+              <option>Private Investor / Individual</option>
+              <option>1031 Exchange Buyer</option>
+              <option>Family Office</option>
+              <option>REIT / Institutional</option>
+              <option>Owner-User</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message (Optional)</label><textarea placeholder="Questions, timeline, financing details..."></textarea></div>
+          <button class="btn-submit" onclick="handleInquiry(event)">Send Inquiry</button>
+        </div>
       </div>
     </div>
   </div>
@@ -707,90 +775,59 @@
 
 <!-- FOOTER -->
 <footer>
-  <img src="web_images/pier-logo-full.png" alt="PIER Commercial Real Estate" class="footer-logo" style="height:48px;width:auto;margin:0 auto 24px;display:block;opacity:0.75;" />
-  <p class="footer-text">This offering memorandum has been prepared for informational purposes only. The information herein has been obtained from sources believed to be reliable but has not been independently verified. All projections and assumptions are provided as examples only and do not represent the current or future performance of the property. Prospective tenants are advised to conduct their own due diligence.</p>
-  <p class="footer-meta">2812 Williams Street · Savannah, GA 31404 · Parcel 2-0084-04-014 · Zoning B-N · Tax District 020 · &copy; 2026 PIER Commercial Real Estate</p>
+  <div class="footer-logo"><img src="web_images/pier-logo-nav.png" alt="PIER Commercial Real Estate" /></div>
+  <p class="footer-text">© 2025 PIER Commercial Real Estate. All rights reserved. This offering is subject to prior sale, lease, or withdrawal without notice. All information believed reliable but not guaranteed. Prospective purchasers are advised to conduct independent due diligence. This is not an offer to sell securities.</p>
+  <div class="footer-links">
+    <a href="https://www.piercommercial.com" target="_blank">piercommercial.com</a>
+    <a href="mailto:ryan@piercommercial.com">Contact</a>
+  </div>
 </footer>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" onclick="closeLightbox()">&#215;</button>
-  <button class="lightbox-prev" onclick="shiftLightbox(-1)">&#8249;</button>
-  <img id="lightbox-img" src="" alt="" />
-  <button class="lightbox-next" onclick="shiftLightbox(1)">&#8250;</button>
-</div>
-
 <script>
-  // Nav scroll highlight
-  const sections = ['overview','gallery','location','market','contact'];
-  const navBtns = document.querySelectorAll('.nav-links button');
+  // Nav active state
+  const navLinks = document.querySelectorAll('.nav-link');
   window.addEventListener('scroll', () => {
-    let current = 'overview';
-    sections.forEach(id => {
-      const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 80) current = id;
+    let cur = '';
+    document.querySelectorAll('section[id]').forEach(s => {
+      if (window.scrollY >= s.offsetTop - 80) cur = s.id;
     });
-    navBtns.forEach(btn => {
-      const onclickVal = btn.getAttribute('onclick') || '';
-      btn.classList.toggle('active', onclickVal.includes("'" + current + "'"));
-    });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
   });
 
-  function scrollToSection(id) {
-    const el = document.getElementById(id);
-    if (el) {
-      const offset = 60;
-      const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
-      window.scrollTo({ top: top, behavior: 'smooth' });
-    }
-  }
+  // Fade in observer
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fi').forEach(el => obs.observe(el));
 
   // Lightbox
-  const galleryImages = [
-    { src: 'web_images/hero_aerial.jpg', alt: 'Aerial · Victory Drive Corridor' },
-    { src: 'web_images/aerial_context.jpg', alt: 'Aerial · Surrounding Developments' },
-    { src: 'web_images/exterior_front.jpg', alt: 'Exterior · Front Facade' },
-    { src: 'web_images/exterior_entrance.jpg', alt: 'Exterior · Covered Entrance' },
-    { src: 'web_images/exterior_parking.jpg', alt: 'Exterior · Parking' },
-    { src: 'web_images/exterior_side.jpg', alt: 'Exterior · Side View' },
-    { src: 'web_images/interior_large1.jpg', alt: 'Interior · Open Area' },
-    { src: 'web_images/interior_large2.jpg', alt: 'Interior · Open Area 2' },
-    { src: 'web_images/interior_open1.jpg', alt: 'Interior · Open Space' },
-    { src: 'web_images/interior_open2.jpg', alt: 'Interior · Built-In Cabinetry' },
-    { src: 'web_images/interior_office1.jpg', alt: 'Interior · Private Office' },
-    { src: 'web_images/interior_office2.jpg', alt: 'Interior · Private Office 2' },
-    { src: 'web_images/interior_hall.jpg', alt: 'Interior · Corridor' },
-    { src: 'web_images/interior_breakroom.jpg', alt: 'Interior · Staff Lounge' },
-    { src: 'web_images/interior_loading.jpg', alt: 'Interior · Loading / Drive-In Door' },
-    { src: 'web_images/interior_restroom.jpg', alt: 'Interior · ADA Restroom' },
-  ];
-  let currentIdx = 0;
-
-  function openLightbox(idx) {
-    currentIdx = idx;
-    const lb = document.getElementById('lightbox');
-    const img = document.getElementById('lightbox-img');
-    img.src = galleryImages[idx].src;
-    img.alt = galleryImages[idx].alt;
-    lb.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  function shiftLightbox(dir) {
-    currentIdx = (currentIdx + dir + galleryImages.length) % galleryImages.length;
-    openLightbox(currentIdx);
-  }
+  const items = Array.from(document.querySelectorAll('.gallery-item'));
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  let ci = 0;
+  const imgs = items.map(i => ({ src: i.querySelector('img').src, alt: i.querySelector('img').alt }));
+  function openLb(i) { ci = i; lbImg.src = imgs[i].src; lbImg.alt = imgs[i].alt; lb.classList.add('active'); document.body.style.overflow = 'hidden'; }
+  function closeLb() { lb.classList.remove('active'); document.body.style.overflow = ''; }
+  items.forEach((item, i) => item.addEventListener('click', () => openLb(i)));
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  document.getElementById('lbPrev').addEventListener('click', () => openLb((ci - 1 + imgs.length) % imgs.length));
+  document.getElementById('lbNext').addEventListener('click', () => openLb((ci + 1) % imgs.length));
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') shiftLightbox(-1);
-    if (e.key === 'ArrowRight') shiftLightbox(1);
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') openLb((ci - 1 + imgs.length) % imgs.length);
+    if (e.key === 'ArrowRight') openLb((ci + 1) % imgs.length);
   });
-  document.getElementById('lightbox').addEventListener('click', function(e) {
-    if (e.target === this) closeLightbox();
-  });
+
+  // Form handler
+  function handleInquiry(e) {
+    e.preventDefault();
+    const btn = e.target;
+    btn.textContent = 'Inquiry Sent — We Will Be In Touch';
+    btn.style.background = '#2e7d32';
+    btn.disabled = true;
+  }
 </script>
 </body>
 </html>
