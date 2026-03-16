@@ -183,7 +183,7 @@
       padding: 1.85rem 1.65rem; transition: box-shadow 0.2s;
     }
     .highlight-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
-    .highlight-icon { font-size: 1.7rem; margin-bottom: 0.85rem; display: block; }
+    .highlight-icon { width: 32px; height: 4px; background: var(--orange); display: block; margin-bottom: 1.2rem; border-radius: 2px; }
     .highlight-title { font-family: 'Playfair Display', serif; font-size: 1.08rem; font-weight: 600; color: var(--navy); margin-bottom: 0.6rem; }
     .highlight-text { font-size: 0.85rem; line-height: 1.75; color: var(--text-mid); }
 
@@ -222,7 +222,7 @@
     .lease-card-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 600; color: var(--white); margin-bottom: 1.4rem; }
     .lease-item { display: flex; gap: 0.9rem; margin-bottom: 1.15rem; padding-bottom: 1.15rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
     .lease-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .lease-item-icon { font-size: 1.15rem; flex-shrink: 0; margin-top: 2px; }
+    .lease-item-icon { width: 10px; height: 10px; min-width: 10px; background: var(--orange); border-radius: 1px; flex-shrink: 0; margin-top: 7px; display: inline-block; }
     .lease-item-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 3px; }
     .lease-item-value { font-size: 0.9rem; font-weight: 600; color: var(--white); }
     .lease-item-note { font-size: 0.76rem; color: rgba(255,255,255,0.45); margin-top: 2px; }
@@ -292,7 +292,7 @@
     .broker-contact { display: flex; flex-direction: column; gap: 0.6rem; }
     .broker-contact a { display: flex; align-items: center; gap: 0.7rem; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.87rem; transition: color 0.2s; }
     .broker-contact a:hover { color: var(--white); }
-    .broker-contact-icon { width: 18px; text-align: center; color: var(--orange); }
+    .broker-contact-icon { width: 8px; height: 8px; min-width: 8px; background: var(--orange); border-radius: 1px; flex-shrink: 0; display: inline-block; vertical-align: middle; }
     .contact-form { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.85rem; }
     .contact-form h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--white); margin-bottom: 1.4rem; }
     .form-group { margin-bottom: 1.15rem; }
@@ -465,32 +465,32 @@
     </div>
     <div class="highlights-grid">
       <div class="highlight-card fi">
-        <span class="highlight-icon">📍</span>
+        <span class="highlight-icon"></span>
         <div class="highlight-title">Irreplaceable Corridor Location</div>
         <p class="highlight-text">Positioned steps from Victory Drive and the Truman Expressway — Savannah's most active commercial growth zone — with direct adjacency to Whole Foods, ALDI, Target, and Home Depot. This co-tenancy environment is not replicable at this price point.</p>
       </div>
       <div class="highlight-card fi">
-        <span class="highlight-icon">💼</span>
+        <span class="highlight-icon"></span>
         <div class="highlight-title">Clean Modified NNN Structure</div>
         <p class="highlight-text">Tenant bears all operating expenses including taxes, insurance, utilities, and maintenance. Landlord retains only Roof and Structure obligations — creating a near-passive income stream with minimal management burden and predictable cash flow.</p>
       </div>
       <div class="highlight-card fi">
-        <span class="highlight-icon">📈</span>
+        <span class="highlight-icon"></span>
         <div class="highlight-title">6.20% Stabilized Cap Rate</div>
         <p class="highlight-text">At $2,300,000 and $142,655 stabilized NOI, this offering delivers a 6.20% cap rate — a strong risk-adjusted return in a coastal Georgia market where quality commercial assets trade at compressed yields. Immediate income from day one.</p>
       </div>
       <div class="highlight-card fi">
-        <span class="highlight-icon">🏗️</span>
+        <span class="highlight-icon"></span>
         <div class="highlight-title">Functional Versatility</div>
         <p class="highlight-text">Three expansive open areas, private offices, conference room, staff lounge, five restrooms, overhead drive-in door, and rear loading ramp. The floor plan accommodates office, retail-showroom, service, medical, or distribution uses — broadening the tenant universe.</p>
       </div>
       <div class="highlight-card fi">
-        <span class="highlight-icon">⚡</span>
+        <span class="highlight-icon"></span>
         <div class="highlight-title">Rare Infrastructure Assets</div>
         <p class="highlight-text">An operational Cummins diesel generator on a concrete pad provides uninterrupted power — a feature that commands premium rents from medical, tech, and mission-critical tenants. Combined with 28+ parking spaces and dual-street frontage, this property is operationally superior.</p>
       </div>
       <div class="highlight-card fi">
-        <span class="highlight-icon">🏙️</span>
+        <span class="highlight-icon"></span>
         <div class="highlight-title">Growth Market Fundamentals</div>
         <p class="highlight-text">83,318 residents within 3 miles with $79K average household income. The Victory Drive corridor is experiencing active residential densification — Aventon Victory luxury apartments are steps away — driving sustained retail and commercial demand in this submarket.</p>
       </div>
@@ -550,7 +550,7 @@
       <div class="lease-card">
         <div class="lease-card-title">Lease Terms at a Glance</div>
         <div class="lease-item">
-          <span class="lease-item-icon">💰</span>
+          <span class="lease-item-icon"></span>
           <div>
             <div class="lease-item-label">Base Rent</div>
             <div class="lease-item-value">$23.00 per SF per Year</div>
@@ -558,7 +558,7 @@
           </div>
         </div>
         <div class="lease-item">
-          <span class="lease-item-icon">📋</span>
+          <span class="lease-item-icon"></span>
           <div>
             <div class="lease-item-label">Lease Type</div>
             <div class="lease-item-value">Modified NNN (Net Net Net)</div>
@@ -566,7 +566,7 @@
           </div>
         </div>
         <div class="lease-item">
-          <span class="lease-item-icon">🏢</span>
+          <span class="lease-item-icon"></span>
           <div>
             <div class="lease-item-label">Landlord Obligations</div>
             <div class="lease-item-value">Roof &amp; Structural Repairs Only</div>
@@ -574,7 +574,7 @@
           </div>
         </div>
         <div class="lease-item">
-          <span class="lease-item-icon">📐</span>
+          <span class="lease-item-icon"></span>
           <div>
             <div class="lease-item-label">Leasable Area</div>
             <div class="lease-item-value">6,542 SF (entire building)</div>
@@ -582,7 +582,7 @@
           </div>
         </div>
         <div class="lease-item">
-          <span class="lease-item-icon">🚗</span>
+          <span class="lease-item-icon"></span>
           <div>
             <div class="lease-item-label">Parking</div>
             <div class="lease-item-value">28+ Dedicated Spaces</div>
@@ -737,10 +737,10 @@
           <div class="broker-name">Ryan T. Schneider, CCIM</div>
           <div class="broker-title">President &amp; Broker · PIER Commercial Real Estate</div>
           <div class="broker-contact">
-            <a href="tel:9122396298"><span class="broker-contact-icon">📞</span> 912.239.6298</a>
-            <a href="mailto:ryan@piercommercial.com"><span class="broker-contact-icon">✉️</span> ryan@piercommercial.com</a>
-            <a href="https://www.piercommercial.com" target="_blank"><span class="broker-contact-icon">🌐</span> www.piercommercial.com</a>
-            <a href="#"><span class="broker-contact-icon">📍</span> 5105 Paulsen Street, Savannah, GA 31405</a>
+            <a href="tel:9122396298"><span class="broker-contact-icon"></span> 912.239.6298</a>
+            <a href="mailto:ryan@piercommercial.com"><span class="broker-contact-icon"></span> ryan@piercommercial.com</a>
+            <a href="https://www.piercommercial.com" target="_blank"><span class="broker-contact-icon"></span> www.piercommercial.com</a>
+            <a href="#"><span class="broker-contact-icon"></span> 5105 Paulsen Street, Savannah, GA 31405</a>
           </div>
         </div>
       </div>
