@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2812 Williams Street | Investment Offering | For Sale | Savannah, GA</title>
-  <meta name="description" content="Investment offering: 2812 Williams Street, Savannah, GA. 6,542 SF income-producing commercial property. Modified NNN lease at $23/SF. $2,300,000 asking price. 6.2% cap rate. Victory Drive Corridor. PIER Commercial Real Estate." />
-  <meta property="og:title" content="2812 Williams Street — Investment Offering | Savannah, GA" />
-  <meta property="og:description" content="6,542 SF commercial building. Modified NNN lease at $23/SF. $2,300,000 asking price. 6.2% cap rate. Victory Drive Corridor." />
+  <title>2812 Williams Street | For Lease | Savannah, GA</title>
+  <meta name="description" content="For Lease: 2812 Williams Street, Savannah, GA. +-6,542 SF commercial space. $24/SF NNN. Divisible. Victory Drive Corridor. 28+ parking spaces. PIER Commercial Real Estate." />
+  <meta property="og:title" content="2812 Williams Street — For Lease | Savannah, GA" />
+  <meta property="og:description" content="+-6,542 SF commercial space for lease at $24/SF NNN. Divisible. Victory Drive Corridor. Below-market rate in Savannah's tightest office market." />
   <meta property="og:image" content="web_images/hero_aerial_spotlight.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -152,6 +152,25 @@
     .metric-value.hl { color: var(--orange-light); }
     .metric-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 5px; display: block; }
 
+    /* ── VALUE BANNER ── */
+    .value-banner {
+      background: linear-gradient(135deg, #1a3a1a 0%, #0f2a0f 100%);
+      border-top: 3px solid #4caf50; border-bottom: 3px solid #4caf50;
+      padding: 1.5rem 2rem;
+    }
+    .value-banner-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+    }
+    .value-banner-label {
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      color: #81c784; white-space: nowrap;
+    }
+    .value-banner-text {
+      font-size: 0.92rem; color: #c8e6c9; line-height: 1.6; flex: 1;
+    }
+    .value-banner-text strong { color: #a5d6a7; }
+
     /* ── SECTIONS ── */
     section { padding: 5rem 2rem; scroll-margin-top: 64px; }
     .section-inner { max-width: 1200px; margin: 0 auto; }
@@ -187,35 +206,31 @@
     .highlight-title { font-family: 'Playfair Display', serif; font-size: 1.08rem; font-weight: 600; color: var(--navy); margin-bottom: 0.6rem; }
     .highlight-text { font-size: 0.85rem; line-height: 1.75; color: var(--text-mid); }
 
-    /* ── PROFORMA ── */
-    #proforma { background: var(--navy); }
-    .proforma-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
-    .proforma-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; overflow: hidden; }
-    .proforma-card-header { background: rgba(255,255,255,0.08); padding: 0.95rem 1.4rem; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.55); border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .proforma-row { display: flex; justify-content: space-between; align-items: center; padding: 0.72rem 1.4rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
-    .proforma-row:last-child { border-bottom: none; }
-    .proforma-row.total { background: rgba(203,82,30,0.15); border-top: 1px solid rgba(203,82,30,0.35); padding: 0.95rem 1.4rem; }
-    .proforma-row.noi-row { background: rgba(46,125,50,0.15); border-top: 1px solid rgba(46,125,50,0.35); padding: 0.95rem 1.4rem; }
-    .proforma-key { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
-    .proforma-val { font-size: 0.87rem; font-weight: 600; color: var(--white); }
-    .proforma-val.pos { color: #a5d6a7; }
-    .proforma-val.neg { color: #ef9a9a; }
-    .proforma-val.noi-v { color: #a5d6a7; font-size: 1.08rem; font-weight: 700; }
-    .proforma-val.tot-v { color: var(--orange-light); font-size: 1.08rem; font-weight: 700; }
-    .cap-callout {
+    /* ── MARKET COMPARISON ── */
+    #market-compare { background: var(--navy); }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+    .compare-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; overflow: hidden; }
+    .compare-card-header { padding: 0.95rem 1.4rem; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.55); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .compare-card-header.ours { background: rgba(203,82,30,0.25); color: var(--orange-light); }
+    .compare-card-header.market { background: rgba(255,255,255,0.08); }
+    .compare-row { display: flex; justify-content: space-between; align-items: center; padding: 0.72rem 1.4rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .compare-row:last-child { border-bottom: none; }
+    .compare-key { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
+    .compare-val { font-size: 0.87rem; font-weight: 600; color: var(--white); }
+    .compare-val.good { color: #a5d6a7; }
+    .compare-val.bad { color: #ef9a9a; }
+    .savings-callout {
       margin-top: 2rem; padding: 1.85rem 2rem;
-      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
-      border-left: 4px solid var(--orange); border-radius: 8px;
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+      background: rgba(46,125,50,0.15); border: 1px solid rgba(46,125,50,0.35);
+      border-left: 4px solid #4caf50; border-radius: 8px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
     }
-    .cap-stat { text-align: center; }
-    .cap-stat-value { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 700; color: var(--white); line-height: 1; display: block; }
-    .cap-stat-value.grn { color: #a5d6a7; }
-    .cap-stat-value.orn { color: var(--orange-light); }
-    .cap-stat-label { font-size: 0.63rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 6px; display: block; }
-    .proforma-disclaimer { margin-top: 1.4rem; font-size: 0.73rem; color: rgba(255,255,255,0.3); line-height: 1.7; font-style: italic; text-align: center; }
+    .savings-stat { text-align: center; }
+    .savings-stat-value { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 700; color: #a5d6a7; line-height: 1; display: block; }
+    .savings-stat-label { font-size: 0.63rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 6px; display: block; }
+    .market-disclaimer { margin-top: 1.4rem; font-size: 0.73rem; color: rgba(255,255,255,0.3); line-height: 1.7; font-style: italic; text-align: center; }
 
-    /* ── LEASE ── */
+    /* ── LEASE TERMS ── */
     #lease { background: var(--white); }
     .lease-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2.5rem; }
     .lease-card { background: var(--navy); border-radius: 8px; padding: 2.25rem; border-left: 4px solid var(--orange); }
@@ -233,8 +248,8 @@
     .expense-badge { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; }
     .badge-t { background: var(--green-light); color: var(--green); }
     .badge-l { background: #fff3e0; color: #e65100; }
-    .investor-note { margin-top: 1.4rem; padding: 1.15rem 1.35rem; background: var(--green-light); border-radius: 6px; border-left: 3px solid var(--green); }
-    .investor-note p { font-size: 0.82rem; color: #1b5e20; line-height: 1.7; }
+    .tenant-note { margin-top: 1.4rem; padding: 1.15rem 1.35rem; background: var(--green-light); border-radius: 6px; border-left: 3px solid var(--green); }
+    .tenant-note p { font-size: 0.82rem; color: #1b5e20; line-height: 1.7; }
 
     /* ── GALLERY ── */
     #gallery { background: var(--off-white); }
@@ -271,7 +286,7 @@
     .traffic-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 5px; display: block; }
     .submarket-text p { font-size: 0.92rem; line-height: 1.85; color: var(--text-mid); margin-bottom: 1rem; }
 
-    /* ── MARKET ── */
+    /* ── DEMOGRAPHICS ── */
     #market { background: var(--off-white); }
     .demo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
     .demo-card { background: var(--white); border: 1px solid var(--mid-gray); border-radius: 8px; overflow: hidden; }
@@ -327,10 +342,10 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      .two-col, .proforma-grid, .lease-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; }
+      .two-col, .compare-grid, .lease-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; }
       .highlights-grid, .demo-grid { grid-template-columns: 1fr 1fr; }
       .metrics-bar-inner { grid-template-columns: repeat(3, 1fr); }
-      .cap-callout { grid-template-columns: repeat(2, 1fr); }
+      .savings-callout { grid-template-columns: repeat(2, 1fr); }
       .nav-links { display: none; }
     }
     @media (max-width: 600px) {
@@ -339,7 +354,7 @@
       .gallery-item.featured { grid-column: span 2; }
       .hero-content { padding: 0 20px 24px; }
       .metrics-bar-inner { grid-template-columns: repeat(2, 1fr); }
-      .cap-callout { grid-template-columns: 1fr 1fr; }
+      .savings-callout { grid-template-columns: 1fr 1fr; }
       .traffic-callout { grid-template-columns: 1fr; }
     }
   </style>
@@ -350,43 +365,43 @@
 <nav>
   <div class="nav-left">
     <a href="#" class="nav-logo"><img src="web_images/pier-logo-nav.png" alt="PIER Commercial Real Estate" /></a>
-    <span class="nav-badge">Investment Offering · For Sale</span>
+    <span class="nav-badge">For Lease · Available Now</span>
   </div>
   <ul class="nav-links">
     <li><a href="#overview" class="nav-link">Overview</a></li>
-    <li><a href="#proforma" class="nav-link">Proforma</a></li>
-    <li><a href="#lease" class="nav-link">Lease</a></li>
+    <li><a href="#market-compare" class="nav-link">Market Value</a></li>
+    <li><a href="#lease" class="nav-link">Lease Terms</a></li>
     <li><a href="#gallery" class="nav-link">Gallery</a></li>
     <li><a href="#location" class="nav-link">Location</a></li>
     <li><a href="#market" class="nav-link">Market</a></li>
     <li><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Request Offering Package</a>
+  <a href="#contact" class="nav-cta">Schedule a Tour</a>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
-  <div class="hero-badge-top">For Sale · Investment Offering</div>
+  <div class="hero-badge-top">For Lease · Available Now</div>
   <div class="hero-address-top">2812 Williams St · Savannah, GA 31404</div>
   <div class="hero-content">
     <div class="hero-eyebrow">Victory Drive Corridor · Savannah, Georgia</div>
     <h1 class="hero-title">2812 Williams<br>Street</h1>
-    <p class="hero-subtitle">6,542 SF Income-Producing Commercial Property · Modified NNN Lease</p>
+    <p class="hero-subtitle">+-6,542 SF Commercial Space For Lease · True NNN · Divisible · Available Now</p>
     <div class="hero-tags">
       <span>Office / Retail-Showroom</span>
-      <span>6,542 SF</span>
+      <span>+-6,542 SF</span>
       <span>1.04 Acres</span>
       <span>B-N Zoning</span>
     </div>
     <div class="hero-price-row">
       <div>
-        <div class="hero-price-label">Asking Price</div>
-        <div class="hero-price-value">$2,300,000</div>
-        <div class="hero-price-sub">$351.57 / SF &nbsp;·&nbsp; Offers Invited</div>
+        <div class="hero-price-label">Asking Rent</div>
+        <div class="hero-price-value">$24.00/SF</div>
+        <div class="hero-price-sub">NNN · $13,084/Mo (Full Building) &nbsp;·&nbsp; Divisible</div>
       </div>
-      <div class="hero-cap-pill">6.2% Cap Rate</div>
+      <div class="hero-cap-pill">$11–$13/SF Below Market</div>
     </div>
   </div>
 </section>
@@ -395,156 +410,164 @@
 <div class="metrics-bar">
   <div class="metrics-bar-inner">
     <div class="metric-item">
-      <span class="metric-value hl">$150,466</span>
-      <span class="metric-label">Gross Potential Rent / Yr</span>
+      <span class="metric-value hl">$24.00</span>
+      <span class="metric-label">Asking Rent / SF / Yr (NNN)</span>
     </div>
     <div class="metric-item">
-      <span class="metric-value hl">$142,655</span>
-      <span class="metric-label">Stabilized NOI</span>
+      <span class="metric-value hl">$13,084</span>
+      <span class="metric-label">Monthly Base Rent (Full Bldg)</span>
     </div>
     <div class="metric-item">
-      <span class="metric-value">6.20%</span>
-      <span class="metric-label">Cap Rate (Stabilized)</span>
+      <span class="metric-value">$35.00</span>
+      <span class="metric-label">Savannah Market Avg (Gross)</span>
     </div>
     <div class="metric-item">
-      <span class="metric-value">$23.00</span>
-      <span class="metric-label">Base Rent / SF / Yr</span>
+      <span class="metric-value">+-6,542</span>
+      <span class="metric-label">Total Leasable SF</span>
     </div>
     <div class="metric-item">
-      <span class="metric-value">6,542</span>
-      <span class="metric-label">Total Square Feet</span>
+      <span class="metric-value">28+</span>
+      <span class="metric-label">Dedicated Parking Spaces</span>
     </div>
   </div>
 </div>
 
-<!-- INVESTMENT OVERVIEW -->
+<!-- VALUE BANNER -->
+<div class="value-banner">
+  <div class="value-banner-inner">
+    <div class="value-banner-label">Why This Deal Wins</div>
+    <div class="value-banner-text">
+      The Savannah office market is asking <strong>$30–$35/SF gross</strong> — and tightening. At <strong>$24/SF NNN</strong>, 2812 Williams Street delivers significantly more space, better parking, and superior infrastructure at a rate that comparable buildings simply cannot match. This is not a compromise — it is a rare market opportunity.
+    </div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
 <section id="overview">
   <div class="section-inner">
     <div class="two-col">
       <div class="overview-text fi">
-        <div class="section-label">Investment Overview</div>
-        <h2 class="section-title">A Positioned Asset in Savannah's Most Active Corridor</h2>
-        <p>This 6,542 SF single-story commercial building at 2812 Williams Street represents a compelling income-producing acquisition opportunity in the heart of Savannah's Victory Drive Corridor — one of the city's most rapidly evolving commercial and residential growth zones.</p>
-        <p>The property is offered with a <strong>Modified NNN lease structure at $23.00/SF annually</strong>, generating $150,466 in gross potential rent. Under this structure, the tenant assumes responsibility for all operating expenses — property taxes, insurance, utilities, and maintenance — with the landlord retaining only Roof and Structure obligations. This creates an exceptionally clean, low-management income stream.</p>
-        <p>The building sits on <strong>1.04 acres with 28+ parking spaces</strong> across three lots, dual-street frontage, and a drive-in loading door — features that command premium rents and attract quality tenants. The property is immediately adjacent to national retailers including Whole Foods, ALDI, Target, and Home Depot, providing exceptional co-tenancy and foot traffic dynamics.</p>
-        <p>At <strong>$2,300,000 ($351.57/SF)</strong>, this offering delivers a <strong>6.20% stabilized cap rate</strong> — a strong risk-adjusted return in a high-growth coastal Georgia submarket with limited comparable supply.</p>
+        <div class="section-label">Leasing Overview</div>
+        <h2 class="section-title">Savannah's Best Value in Commercial Space — Available Now</h2>
+        <p>2812 Williams Street offers <strong>+-6,542 SF of move-in-ready commercial space</strong> in the heart of Savannah's Victory Drive Corridor — one of the city's most active commercial and residential growth zones. The building is available now for immediate occupancy and can be leased as a single tenant or subdivided to accommodate smaller users.</p>
+        <p>The lease is structured as a <strong>true Triple Net (NNN)</strong>, meaning the tenant pays property taxes, insurance, and is responsible directly for common area maintenance. This keeps the base rent clean and predictable — no hidden landlord pass-throughs, no surprises. Your rent is your rent.</p>
+        <p>At <strong>$24.00/SF NNN</strong>, this property leases for $11 to $13 per square foot below what comparable Savannah office buildings are currently asking on a gross basis — a meaningful advantage for any business managing occupancy costs. The Savannah office market vacancy rate has tightened to just 4.6% with average asking rents climbing toward $35/SF. This rate will not last.</p>
+        <p>The building sits on <strong>1.04 acres with 28+ parking spaces</strong> across three lots — a feature that is genuinely rare in this corridor and commands a premium from any tenant requiring client parking. Dual-street frontage, a drive-in loading door, and an on-site Cummins diesel generator round out an infrastructure package that most Savannah office buildings simply cannot offer.</p>
       </div>
       <div class="fi">
         <div class="spec-table">
           <div class="spec-table-header">Property Specifications</div>
           <div class="spec-row"><span class="spec-key">Address</span><span class="spec-val">2812 Williams Street, Savannah, GA 31404</span></div>
-          <div class="spec-row"><span class="spec-key">Parcel ID</span><span class="spec-val">2-0084-04-014</span></div>
-          <div class="spec-row"><span class="spec-key">Building Size</span><span class="spec-val hl">6,542 SF (6,644 SF under roof)</span></div>
+          <div class="spec-row"><span class="spec-key">Building Size</span><span class="spec-val hl">+-6,542 SF (6,644 SF under roof)</span></div>
           <div class="spec-row"><span class="spec-key">Lot Size</span><span class="spec-val">1.04 Acres / 45,324 SF</span></div>
           <div class="spec-row"><span class="spec-key">Year Built</span><span class="spec-val">1997</span></div>
           <div class="spec-row"><span class="spec-key">Construction</span><span class="spec-val">Masonry / Brick · Terracotta Roof</span></div>
           <div class="spec-row"><span class="spec-key">Zoning</span><span class="spec-val">B-N (Neighborhood Business)</span></div>
-          <div class="spec-row"><span class="spec-key">Parking</span><span class="spec-val">28+ Spaces (3 lots)</span></div>
-          <div class="spec-row"><span class="spec-key">Lease Type</span><span class="spec-val hl">Modified NNN</span></div>
-          <div class="spec-row"><span class="spec-key">Base Rent</span><span class="spec-val hl">$23.00/SF/Yr · $150,466/Yr</span></div>
-          <div class="spec-row"><span class="spec-key">Monthly Rent</span><span class="spec-val hl">$12,539/Mo</span></div>
-          <div class="spec-row"><span class="spec-key">Asking Price</span><span class="spec-val hl">$2,300,000 ($351.57/SF)</span></div>
-          <div class="spec-row"><span class="spec-key">Cap Rate</span><span class="spec-val hl">6.20% (Stabilized)</span></div>
-          <div class="spec-row"><span class="spec-key">Last Sale</span><span class="spec-val">Sept. 2024 · $1,728,000</span></div>
-          <div class="spec-row"><span class="spec-key">County Appraisal</span><span class="spec-val">$1,292,200 (2025)</span></div>
-          <div class="spec-row"><span class="spec-key">Annual Taxes</span><span class="spec-val">$14,880.46 (NNN — Tenant)</span></div>
+          <div class="spec-row"><span class="spec-key">Parking</span><span class="spec-val hl">28+ Spaces (3 lots)</span></div>
+          <div class="spec-row"><span class="spec-key">Lease Type</span><span class="spec-val hl">Triple Net (NNN)</span></div>
+          <div class="spec-row"><span class="spec-key">Base Rent</span><span class="spec-val hl">$24.00/SF/Yr</span></div>
+          <div class="spec-row"><span class="spec-key">Monthly Rent</span><span class="spec-val hl">$13,084/Mo (Full Building)</span></div>
+          <div class="spec-row"><span class="spec-key">Divisible</span><span class="spec-val hl">Yes — Rate Quoted by Size Taken</span></div>
+          <div class="spec-row"><span class="spec-key">Availability</span><span class="spec-val hl">Immediate</span></div>
           <div class="spec-row"><span class="spec-key">Generator</span><span class="spec-val">Cummins Diesel (on-site, operational)</span></div>
           <div class="spec-row"><span class="spec-key">Loading</span><span class="spec-val">Overhead Drive-In Door + Rear Ramp</span></div>
+          <div class="spec-row"><span class="spec-key">Annual Taxes</span><span class="spec-val">$14,880.46 (NNN — Tenant)</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- INVESTMENT HIGHLIGHTS -->
+<!-- LEASING HIGHLIGHTS -->
 <section id="highlights">
   <div class="section-inner">
     <div class="fi" style="text-align:center;">
-      <div class="section-label">Why This Asset</div>
-      <h2 class="section-title">Six Reasons This Investment Stands Apart</h2>
+      <div class="section-label">Why This Space</div>
+      <h2 class="section-title">Six Reasons This Lease Stands Apart</h2>
     </div>
     <div class="highlights-grid">
       <div class="highlight-card fi">
         <span class="highlight-icon"></span>
-        <div class="highlight-title">Irreplaceable Corridor Location</div>
-        <p class="highlight-text">Positioned steps from Victory Drive and the Truman Expressway — Savannah's most active commercial growth zone — with direct adjacency to Whole Foods, ALDI, Target, and Home Depot. This co-tenancy environment is not replicable at this price point.</p>
+        <div class="highlight-title">Priced $11–$13 Below Market</div>
+        <p class="highlight-text">Savannah's office market is averaging $30–$35/SF on a gross basis, with Class A space reaching $39/SF downtown. At $24/SF NNN, this property delivers a genuine cost advantage — freeing budget for staff, operations, and growth rather than occupancy overhead.</p>
       </div>
       <div class="highlight-card fi">
         <span class="highlight-icon"></span>
-        <div class="highlight-title">Clean Modified NNN Structure</div>
-        <p class="highlight-text">Tenant bears all operating expenses including taxes, insurance, utilities, and maintenance. Landlord retains only Roof and Structure obligations — creating a near-passive income stream with minimal management burden and predictable cash flow.</p>
+        <div class="highlight-title">True NNN — No Hidden Costs</div>
+        <p class="highlight-text">This is a true Triple Net lease. The tenant pays taxes, insurance, and is directly responsible for CAM. There are no landlord pass-throughs buried in the fine print. Your base rent is your actual rent — clean, predictable, and budget-friendly from day one.</p>
       </div>
       <div class="highlight-card fi">
         <span class="highlight-icon"></span>
-        <div class="highlight-title">6.20% Stabilized Cap Rate</div>
-        <p class="highlight-text">At $2,300,000 and $142,655 stabilized NOI, this offering delivers a 6.20% cap rate — a strong risk-adjusted return in a coastal Georgia market where quality commercial assets trade at compressed yields. Immediate income from day one.</p>
+        <div class="highlight-title">Divisible — Any Size Welcome</div>
+        <p class="highlight-text">The full +-6,542 SF is available as a single-tenant space, but the building can be subdivided to accommodate smaller users. Rate is quoted based on the size taken. Whether you need 1,500 SF or the entire building, we can structure a lease that works.</p>
       </div>
       <div class="highlight-card fi">
         <span class="highlight-icon"></span>
-        <div class="highlight-title">Functional Versatility</div>
-        <p class="highlight-text">Three expansive open areas, private offices, conference room, staff lounge, five restrooms, overhead drive-in door, and rear loading ramp. The floor plan accommodates office, retail-showroom, service, medical, or distribution uses — broadening the tenant universe.</p>
+        <div class="highlight-title">28+ Parking Spaces — Rare in This Market</div>
+        <p class="highlight-text">Three dedicated parking lots with 28+ spaces on 1.04 acres. In a city where parking is a genuine constraint for most office users, this property eliminates that problem entirely — a critical advantage for medical, professional services, and client-facing businesses.</p>
       </div>
       <div class="highlight-card fi">
         <span class="highlight-icon"></span>
-        <div class="highlight-title">Rare Infrastructure Assets</div>
-        <p class="highlight-text">An operational Cummins diesel generator on a concrete pad provides uninterrupted power — a feature that commands premium rents from medical, tech, and mission-critical tenants. Combined with 28+ parking spaces and dual-street frontage, this property is operationally superior.</p>
+        <div class="highlight-title">Exceptional Functional Versatility</div>
+        <p class="highlight-text">Three expansive open areas, private offices, conference room, staff lounge, five restrooms, overhead drive-in door, and rear loading ramp. The floor plan accommodates office, retail-showroom, service, medical, or distribution uses — one of the most flexible buildings in the corridor.</p>
       </div>
       <div class="highlight-card fi">
         <span class="highlight-icon"></span>
-        <div class="highlight-title">Growth Market Fundamentals</div>
-        <p class="highlight-text">83,318 residents within 3 miles with $79K average household income. The Victory Drive corridor is experiencing active residential densification — Aventon Victory luxury apartments are steps away — driving sustained retail and commercial demand in this submarket.</p>
+        <div class="highlight-title">Victory Drive Corridor — Prime Location</div>
+        <p class="highlight-text">Steps from Victory Drive and the Truman Expressway, directly adjacent to Whole Foods, ALDI, CAVA, Target, and Home Depot. 83,000+ residents within 3 miles with $79K average household income. This is an established, active consumer market — not a speculative one.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROFORMA -->
-<section id="proforma">
+<!-- MARKET VALUE COMPARISON -->
+<section id="market-compare">
   <div class="section-inner">
     <div class="fi" style="text-align:center;">
-      <div class="section-label lt">Investment Proforma</div>
-      <h2 class="section-title lt">The Numbers</h2>
+      <div class="section-label lt">Market Value Analysis</div>
+      <h2 class="section-title lt">The Numbers Don't Lie</h2>
       <p style="max-width:680px;margin:0.7rem auto 0;font-size:0.94rem;color:rgba(255,255,255,0.5);line-height:1.8;">
-        Based on $23.00/SF/Yr Modified NNN lease. Tenant pays all operating expenses except Roof &amp; Structure. Landlord reserves reflect industry-standard maintenance obligations for a masonry building of this age.
+        Savannah's office market is tightening fast. Vacancy has dropped to 4.6% and asking rents are climbing. Here is how 2812 Williams Street compares to what else is available right now.
       </p>
     </div>
-    <div class="proforma-grid fi">
-      <div class="proforma-card">
-        <div class="proforma-card-header">Income Analysis</div>
-        <div class="proforma-row"><span class="proforma-key">Building Size</span><span class="proforma-val">6,542 SF</span></div>
-        <div class="proforma-row"><span class="proforma-key">Base Rent Rate</span><span class="proforma-val">$23.00 / SF / Yr</span></div>
-        <div class="proforma-row"><span class="proforma-key">Gross Potential Rent</span><span class="proforma-val pos">$150,466 / Yr</span></div>
-        <div class="proforma-row"><span class="proforma-key">Vacancy Allowance (5%)</span><span class="proforma-val neg">($7,523)</span></div>
-        <div class="proforma-row total"><span class="proforma-key" style="color:rgba(255,255,255,0.85);font-weight:700;">Effective Gross Income</span><span class="proforma-val tot-v">$142,943 / Yr</span></div>
+    <div class="compare-grid fi">
+      <div class="compare-card">
+        <div class="compare-card-header ours">2812 Williams Street — This Offering</div>
+        <div class="compare-row"><span class="compare-key">Asking Rent</span><span class="compare-val good">$24.00/SF NNN</span></div>
+        <div class="compare-row"><span class="compare-key">Lease Type</span><span class="compare-val good">True NNN (Tenant pays taxes, insurance, CAM)</span></div>
+        <div class="compare-row"><span class="compare-key">Parking</span><span class="compare-val good">28+ Dedicated Spaces (3 lots)</span></div>
+        <div class="compare-row"><span class="compare-key">Divisible</span><span class="compare-val good">Yes — Flexible sizing available</span></div>
+        <div class="compare-row"><span class="compare-key">Generator</span><span class="compare-val good">On-site Cummins Diesel</span></div>
+        <div class="compare-row"><span class="compare-key">Drive-In Loading</span><span class="compare-val good">Yes — Overhead door + rear ramp</span></div>
+        <div class="compare-row"><span class="compare-key">Availability</span><span class="compare-val good">Immediate</span></div>
       </div>
-      <div class="proforma-card">
-        <div class="proforma-card-header">Landlord Expenses (Roof &amp; Structure Only)</div>
-        <div class="proforma-row"><span class="proforma-key">Roof Reserve ($0.20/SF)</span><span class="proforma-val neg">($1,308)</span></div>
-        <div class="proforma-row"><span class="proforma-key">Structure Reserve ($0.12/SF)</span><span class="proforma-val neg">($785)</span></div>
-        <div class="proforma-row"><span class="proforma-key">Management Fee (4% EGI)</span><span class="proforma-val neg">($5,718)</span></div>
-        <div class="proforma-row"><span class="proforma-key">Property Taxes</span><span class="proforma-val pos">Tenant (NNN)</span></div>
-        <div class="proforma-row"><span class="proforma-key">Insurance</span><span class="proforma-val pos">Tenant (NNN)</span></div>
-        <div class="proforma-row"><span class="proforma-key">Utilities / Maintenance / CAM</span><span class="proforma-val pos">Tenant (NNN)</span></div>
-        <div class="proforma-row total"><span class="proforma-key" style="color:rgba(255,255,255,0.85);font-weight:700;">Total Landlord Expenses</span><span class="proforma-val neg">($7,811)</span></div>
+      <div class="compare-card">
+        <div class="compare-card-header market">Savannah Office Market — Current Comparables</div>
+        <div class="compare-row"><span class="compare-key">Avg Asking Rent (All Classes)</span><span class="compare-val bad">$35.00/SF Gross</span></div>
+        <div class="compare-row"><span class="compare-key">Class A Downtown</span><span class="compare-val bad">$35.70–$39.84/SF Gross</span></div>
+        <div class="compare-row"><span class="compare-key">Northside / Greater Savannah</span><span class="compare-val bad">$30.00–$34.28/SF Gross</span></div>
+        <div class="compare-row"><span class="compare-key">Market Vacancy Rate</span><span class="compare-val bad">4.6% — Tightening</span></div>
+        <div class="compare-row"><span class="compare-key">Typical Parking</span><span class="compare-val bad">Limited / Shared / Paid</span></div>
+        <div class="compare-row"><span class="compare-key">Generator</span><span class="compare-val bad">Rarely included</span></div>
+        <div class="compare-row"><span class="compare-key">Trend</span><span class="compare-val bad">Rents Rising · Concessions Shrinking</span></div>
       </div>
     </div>
-    <div class="cap-callout fi">
-      <div class="cap-stat"><span class="cap-stat-value grn">$142,655</span><span class="cap-stat-label">Stabilized NOI (Full Occupancy)</span></div>
-      <div class="cap-stat"><span class="cap-stat-value grn">6.20%</span><span class="cap-stat-label">Stabilized Cap Rate</span></div>
-      <div class="cap-stat"><span class="cap-stat-value orn">$2,300,000</span><span class="cap-stat-label">Asking Price</span></div>
-      <div class="cap-stat"><span class="cap-stat-value">$351.57</span><span class="cap-stat-label">Price Per Square Foot</span></div>
+    <div class="savings-callout fi">
+      <div class="savings-stat"><span class="savings-stat-value">$11–$13</span><span class="savings-stat-label">Below Market Rate (Per SF)</span></div>
+      <div class="savings-stat"><span class="savings-stat-value">$72K–$85K</span><span class="savings-stat-label">Annual Savings vs. Market (Full Bldg)</span></div>
+      <div class="savings-stat"><span class="savings-stat-value">4.6%</span><span class="savings-stat-label">Market Vacancy — Act Now</span></div>
     </div>
-    <p class="proforma-disclaimer">Proforma is for informational purposes only. All figures are estimates based on the stated lease rate and industry-standard reserves. Actual income, expenses, and returns may vary. Prospective purchasers are encouraged to conduct independent due diligence. This offering is subject to prior sale or withdrawal without notice. All information believed reliable but not guaranteed.</p>
+    <p class="market-disclaimer">Market data sourced from Cushman &amp; Wakefield / Gilbert &amp; Ezelle Savannah Office MarketBeat Q2 2025 and LoopNet/CommercialCafe current listings. Gross rates reflect full-service or modified gross leases; NNN equivalent rates are higher. All figures believed reliable but not guaranteed.</p>
   </div>
 </section>
 
-<!-- LEASE STRUCTURE -->
+<!-- LEASE TERMS -->
 <section id="lease">
   <div class="section-inner">
     <div class="fi">
       <div class="section-label">Lease Structure</div>
-      <h2 class="section-title">Modified NNN — Maximum Landlord Protection</h2>
-      <p class="section-intro">The property is offered with a Modified NNN lease structure that places virtually all operating risk on the tenant, creating a clean, predictable income stream for the investor with minimal ongoing obligations.</p>
+      <h2 class="section-title">True NNN — Transparent, Predictable, Tenant-Friendly</h2>
+      <p class="section-intro">This is a straightforward Triple Net lease. The tenant pays property taxes, insurance, and is directly responsible for common area maintenance. No landlord expense pools, no reconciliations, no surprises. The base rent is the base rent.</p>
     </div>
     <div class="lease-grid fi">
       <div class="lease-card">
@@ -553,32 +576,32 @@
           <span class="lease-item-icon"></span>
           <div>
             <div class="lease-item-label">Base Rent</div>
-            <div class="lease-item-value">$23.00 per SF per Year</div>
-            <div class="lease-item-note">$150,466 annually · $12,539/month</div>
+            <div class="lease-item-value">$24.00 per SF per Year (NNN)</div>
+            <div class="lease-item-note">$157,008 annually · $13,084/month (full building)</div>
           </div>
         </div>
         <div class="lease-item">
           <span class="lease-item-icon"></span>
           <div>
             <div class="lease-item-label">Lease Type</div>
-            <div class="lease-item-value">Modified NNN (Net Net Net)</div>
-            <div class="lease-item-note">Tenant pays all expenses except Roof &amp; Structure</div>
+            <div class="lease-item-value">Triple Net (NNN)</div>
+            <div class="lease-item-note">Tenant pays taxes, insurance, and CAM directly</div>
           </div>
         </div>
         <div class="lease-item">
           <span class="lease-item-icon"></span>
           <div>
-            <div class="lease-item-label">Landlord Obligations</div>
-            <div class="lease-item-value">Roof &amp; Structural Repairs Only</div>
-            <div class="lease-item-note">All other expenses are tenant responsibility</div>
+            <div class="lease-item-label">Divisible</div>
+            <div class="lease-item-value">Yes — Flexible Sizing Available</div>
+            <div class="lease-item-note">Rate quoted based on size taken — inquire for details</div>
           </div>
         </div>
         <div class="lease-item">
           <span class="lease-item-icon"></span>
           <div>
-            <div class="lease-item-label">Leasable Area</div>
-            <div class="lease-item-value">6,542 SF (entire building)</div>
-            <div class="lease-item-note">Single-tenant or divisible for multi-tenant</div>
+            <div class="lease-item-label">Total Leasable Area</div>
+            <div class="lease-item-value">+-6,542 SF (entire building)</div>
+            <div class="lease-item-note">Single-tenant or divisible for multiple tenants</div>
           </div>
         </div>
         <div class="lease-item">
@@ -589,11 +612,20 @@
             <div class="lease-item-note">Three lots — north, main, and south</div>
           </div>
         </div>
+        <div class="lease-item">
+          <span class="lease-item-icon"></span>
+          <div>
+            <div class="lease-item-label">Availability</div>
+            <div class="lease-item-value">Immediate Occupancy</div>
+            <div class="lease-item-note">Contact broker to schedule a tour and discuss terms</div>
+          </div>
+        </div>
       </div>
       <div>
         <div class="expense-title">Expense Responsibility Matrix</div>
-        <div class="expense-row"><span class="expense-party">Property Taxes</span><span class="expense-badge badge-t">Tenant</span></div>
-        <div class="expense-row"><span class="expense-party">Property Insurance</span><span class="expense-badge badge-t">Tenant</span></div>
+        <div class="expense-row"><span class="expense-party">Property Taxes</span><span class="expense-badge badge-t">Tenant (NNN)</span></div>
+        <div class="expense-row"><span class="expense-party">Property Insurance</span><span class="expense-badge badge-t">Tenant (NNN)</span></div>
+        <div class="expense-row"><span class="expense-party">Common Area Maintenance (CAM)</span><span class="expense-badge badge-t">Tenant (NNN)</span></div>
         <div class="expense-row"><span class="expense-party">Utilities (Electric, Water, Gas)</span><span class="expense-badge badge-t">Tenant</span></div>
         <div class="expense-row"><span class="expense-party">HVAC Maintenance &amp; Repair</span><span class="expense-badge badge-t">Tenant</span></div>
         <div class="expense-row"><span class="expense-party">Parking Lot Maintenance</span><span class="expense-badge badge-t">Tenant</span></div>
@@ -603,8 +635,8 @@
         <div class="expense-row"><span class="expense-party">Generator Maintenance</span><span class="expense-badge badge-t">Tenant</span></div>
         <div class="expense-row"><span class="expense-party">Roof Repairs &amp; Replacement</span><span class="expense-badge badge-l">Landlord</span></div>
         <div class="expense-row"><span class="expense-party">Structural Repairs</span><span class="expense-badge badge-l">Landlord</span></div>
-        <div class="investor-note">
-          <p><strong>Investor Takeaway:</strong> The Modified NNN structure means your only ongoing financial obligation is roof and structural maintenance — typically budgeted at $0.32/SF/yr ($2,093/yr). All other operating costs are passed through to the tenant, creating a near-passive income stream with predictable, low-variance cash flow.</p>
+        <div class="tenant-note">
+          <p><strong>Tenant Advantage:</strong> The NNN structure means your base rent is your actual occupancy cost — no surprise reconciliations or landlord expense pools. At $24/SF, you are locking in a rate that is $11–$13 per square foot below what the Savannah market is currently asking. In a tightening market, that gap only grows in your favor the longer you hold this lease.</p>
         </div>
       </div>
     </div>
@@ -657,7 +689,7 @@
     <div class="location-grid fi">
       <div class="submarket-text">
         <p>2812 Williams Street sits at the intersection of Williams Street and Grenoble Street, steps from Victory Drive (US-80) and the Truman Expressway — Savannah's most rapidly evolving commercial and residential corridor. The property is surrounded by a dense concentration of national retailers and new residential development that drives consistent foot traffic and consumer spending in the immediate trade area.</p>
-        <p>The corridor has seen significant investment in recent years, anchored by the Aventon Victory luxury apartment development steps away and the ongoing densification of the Victory Drive retail strip. This is not a speculative location — it is an established, active consumer market with proven demand.</p>
+        <p>The corridor has seen significant investment in recent years, anchored by the Aventon Victory luxury apartment development steps away and the ongoing densification of the Victory Drive retail strip. This is not a speculative location — it is an established, active consumer market with proven demand and the kind of co-tenancy that supports every type of commercial use.</p>
         <div class="traffic-callout">
           <div class="traffic-stat"><span class="traffic-value">83K+</span><span class="traffic-label">Population (3 mi)</span></div>
           <div class="traffic-stat"><span class="traffic-value">$79K</span><span class="traffic-label">Avg HH Income (3 mi)</span></div>
@@ -731,8 +763,8 @@
       <div class="fi">
         <div class="section-label lt">Exclusive Listing Broker</div>
         <h2 class="section-title lt">PIER Commercial<br>Real Estate</h2>
-        <p class="contact-text">For additional information, including offering memorandum, lease terms, floor plan, ALTA survey, and to schedule a private property tour, please contact the exclusive listing broker. All inquiries are held in strict confidence.</p>
-        <p class="contact-text" style="font-size:0.86rem;color:rgba(255,255,255,0.4);">The Victory Drive corridor is moving fast. New luxury residential, national retail, and a resurgent commercial market are converging at this exact location. The investor who moves first secures the position.</p>
+        <p class="contact-text">For additional information, including lease terms, floor plan, ALTA survey, and to schedule a private property tour, please contact the exclusive listing broker. All inquiries are held in strict confidence.</p>
+        <p class="contact-text" style="font-size:0.86rem;color:rgba(255,255,255,0.4);">The Victory Drive corridor is moving fast. Vacancy is at 4.6% and rents are climbing. At $24/SF NNN, this rate is a genuine market anomaly — and it will not be available indefinitely. The tenant who moves first locks in the advantage.</p>
         <div class="broker-card">
           <div class="broker-name">Ryan T. Schneider, CCIM</div>
           <div class="broker-title">President &amp; Broker · PIER Commercial Real Estate</div>
@@ -746,7 +778,7 @@
       </div>
       <div class="fi">
         <div class="contact-form">
-          <h3>Request Offering Package</h3>
+          <h3>Request Leasing Information</h3>
           <div class="form-row">
             <div class="form-group"><label>First Name</label><input type="text" placeholder="First name" /></div>
             <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last name" /></div>
@@ -754,19 +786,20 @@
           <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
           <div class="form-group"><label>Phone</label><input type="tel" placeholder="(000) 000-0000" /></div>
           <div class="form-group">
-            <label>Investor Type</label>
+            <label>Tenant Type</label>
             <select>
               <option value="">Select...</option>
-              <option>Private Investor / Individual</option>
-              <option>1031 Exchange Buyer</option>
-              <option>Family Office</option>
-              <option>REIT / Institutional</option>
-              <option>Owner-User</option>
+              <option>Office / Professional Services</option>
+              <option>Medical / Healthcare</option>
+              <option>Retail / Showroom</option>
+              <option>Service / Trade Business</option>
+              <option>Distribution / Light Industrial</option>
               <option>Other</option>
             </select>
           </div>
-          <div class="form-group"><label>Message (Optional)</label><textarea placeholder="Questions, timeline, financing details..."></textarea></div>
-          <button class="btn-submit" onclick="handleInquiry(event)">Send Inquiry</button>
+          <div class="form-group"><label>Space Needed (Approx. SF)</label><input type="text" placeholder="e.g. 2,000 SF or Full Building" /></div>
+          <div class="form-group"><label>Message (Optional)</label><textarea placeholder="Questions, timeline, specific requirements..."></textarea></div>
+          <button class="btn-submit" onclick="handleInquiry(event)">Send Leasing Inquiry</button>
         </div>
       </div>
     </div>
@@ -776,7 +809,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo"><img src="web_images/pier-logo-nav.png" alt="PIER Commercial Real Estate" /></div>
-  <p class="footer-text">© 2025 PIER Commercial Real Estate. All rights reserved. This offering is subject to prior sale, lease, or withdrawal without notice. All information believed reliable but not guaranteed. Prospective purchasers are advised to conduct independent due diligence. This is not an offer to sell securities.</p>
+  <p class="footer-text">© 2025 PIER Commercial Real Estate. All rights reserved. This offering is subject to prior lease or withdrawal without notice. All information believed reliable but not guaranteed. Prospective tenants are advised to conduct independent due diligence.</p>
   <div class="footer-links">
     <a href="https://www.piercommercial.com" target="_blank">piercommercial.com</a>
     <a href="mailto:ryan@piercommercial.com">Contact</a>
